@@ -39,6 +39,7 @@
 	<script src="jquery.min.js"></script>
 	<script src="jquery.hover3d.js"></script>
 	<link rel="stylesheet" href="style.css">
+	
 	<link rel="stylesheet" href="header.css">
 	<script>
 		document.getElementById("svg").style.opacity ="0"
@@ -124,8 +125,7 @@
 			height:fit-content;
 		}
 		.screen{
-			height: max-content;
-			
+			height: fit-content;			
 			width: 100%;
 			display: flex;
 			justify-content: center;
@@ -136,14 +136,14 @@
 			flex-flow: column nowrap;
 		}
 		.screen2{
-			max-height: 1000px;
-			height: 500px;
+			
 			width: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			padding-bottom: 40px;
+			padding: 30px;
+			padding-bottom: 40px !important;
 			flex-flow: column nowrap;
 		}
 		.screen:nth-child(2){
@@ -546,10 +546,10 @@
 			opacity: 0.6;
 			transition: 0.5s ease;
 			padding:10px;
-			width:15vw;
+			width:16vw;
 			min-width: fit-content;
 			height: 70px;
-			text-align:left;
+			text-align:center;
 			font-size:1.4vw;
 			font-family: adam;
 		}
@@ -722,7 +722,7 @@
 
    <body onload="drawsvg()"> 	
 	<div id="nav11" style="box-shadow: 0px 2px 10px #888888;">
-		<a href="index.html#homeMain" id="logo"  style="margin-left:40px;"></a>
+		<a href="index.html#homeMain" id="logo"  ></a>
 		<div class="menu" style="font-family:Graphik,sans-serif;">
 			<a href="index.html"   class="links">Home</a>
 			<div class="links" id="linkcont1" onmouseover="expand1();" onmouseout="deExpand1()" >
@@ -854,8 +854,8 @@
 	</div>
 	
 	
-	<div  style="display:flex;justify-content:center;flex-flow:column;margin:0px;">
-		<div class="row" style="padding-top:50px;margin:0px;border-bottom:1px solid rgb(168, 168, 168);justify-content:center !important;align-content:center !important;display:flex;flex-flow:row wrap;">
+	<div  style="width:100%;display:flex;align-items:center;flex-flow:column;margin:0px;">
+		<div class="row" style = "padding:30px 0px;margin:0px;border-bottom:1px solid rgb(168, 168, 168);justify-content:center !important;align-content:center !important;display:flex;flex-flow:row wrap;">
 			<div class="col s12 m5" style="width:500px;display:flex;justify-content:center !important;flex-flow:column;margin:0px">
 				<img style="padding:0px;width:90px;height:95px" alt="" src="covid.png">
 				
@@ -889,10 +889,12 @@
 	
 	<br>
 	<br>
-	
+	<div id="btf">
+			
+	</div>
 	
 
-	<div id="btf" style="width: 100%;background-color:#EAEDED;">
+	<div  style="width: 100%;background-color:#EAEDED;">
 		<div class="newcont"  style="display: flex;flex-flow:row wrap;justify-content:center !important;max-width: 1100px;">
 			<div style="min-width:50%;">
 				<div style="display: flex; justify-content:flex-end">
@@ -1070,6 +1072,7 @@
 					 <br><br>
 					 The topics that will be covered in this 1-week workshop are as follows:
 					 <br>
+					</p>
 					 <ol>
 						 <li>Micro and Macro Economics</li>
 						 <li>Financial Markets and Investment</li>
@@ -1077,11 +1080,14 @@
 						 <li>Stress Management and Happiness</li>
 						 <li>Portfolio Management Project</li>
 					</ol>
-					All of this might sound gibberish right now but let me tell you that after this 1 week you will have command over your money and have a general awareness of day-to-day economics. 
-<br><br>
-You will also be given a real-time project that will boost your confidence and you will also gain experience in being an actual investor. Top project performer will be receiving exciting prizes. 
+					<p>
 
-				</p>
+						All of this might sound gibberish right now but let me tell you that after this 1 week you will have command over your money and have a general awareness of day-to-day economics. 
+						<br><p>
+						You will also be given a real-time project that will boost your confidence and you will also gain experience in being an actual investor. Top project performer will be receiving exciting prizes. 
+					</p>
+
+
 			</div>
 			
 			<a href="course3.html" class="ourbutton" id="modalbutton1">Register</a>
@@ -1224,11 +1230,10 @@ You will also be given a real-time project that will boost your confidence and y
 		
 		<h2 id="tteam" ></h2>
 		
-		<div class="teamcontmain"  style="max-width:1010px;overflow:visible;">
+		<div class="teamcontmain"  style="max-width:1300px;overflow:hidden;">
 			<div id="left-button" onclick="goleft()"></div>
 			
-			<div class="teamcont"   id="teamslider1">
-				
+			<div class="teamcont" id="teamslider">
 				<div class="teamcard" id="firstcard" style="background-image: url(shashwat.jpg);">
 					<div class="teamdesc1">
 						<div class="teamdesc">
@@ -1281,7 +1286,40 @@ You will also be given a real-time project that will boost your confidence and y
 						</div>
 					</div>
 				</div>
-				<div class="teamcard" id="lastcard2"  style="background-position:center;background-image: url(joy2.jpg);">
+				
+			</div>
+			<div class="teamcont" id="teamslider1">
+				
+				
+				
+				<div class="teamcard" style="background-image: url(yash.jpg);">
+					<div class="teamdesc1">
+						<div class="teamdesc">
+							<div>
+								<h5>Yash <br> Goyal</h5>
+							</div>
+							<div>
+								<h6>Entrepreneurship</h6>
+							</div>
+							<a target="_blank" href="https://www.linkedin.com/in/yg1998"><div class="social"></div></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="teamcard" style="background-image: url(nama.jpg);display:flex !important">
+					<div class="teamdesc1">
+						<div class="teamdesc">
+							<div>
+								<h5>Aman<br> Nama</h5>
+							</div>
+							<div>
+								<h6>Marketing</h6>
+							</div>
+							<a target="_blank" href="https://www.linkedin.com/in/aman-nama-303356154"><div class="social"></div></a>
+						</div>
+					</div>
+				</div>
+				<div class="teamcard" style="background-position:center;background-image: url(joy2.jpg);">
 					<div class="teamdesc1">
 						<div class="teamdesc">
 							<div>
@@ -1295,7 +1333,7 @@ You will also be given a real-time project that will boost your confidence and y
 					</div>
 				</div>
 					
-				<div class="teamcard" id="lastcard1" style="background-image: url(umang3.jpg);">
+				<div class="teamcard" style="background-image: url(umang3.jpg);">
 					<div class="teamdesc1">
 						<div class="teamdesc">
 							<div>
@@ -1311,6 +1349,8 @@ You will also be given a real-time project that will boost your confidence and y
 			</div>
 			<div id="right-button" onclick="goright()"></div>
 		</div>
+		
+	</div>
 	</div>
 	
 	
@@ -1348,7 +1388,7 @@ You will also be given a real-time project that will boost your confidence and y
 	<footer class="page-footer" style="background-color:#4b555f">
 		<div class="" style="width:90%;margin:auto;">
 		  <div class="row hide-on-small-only" style="display: block;">
-			  <div class="col s6 m6" style="margin-top: 0px;">
+			  <div class="col s6 m3" style="margin-top: 0px;">
 				  <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
 				  <p class="footertext" style="color:#c6c6c6;padding-top:25px">
 					Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
@@ -1360,14 +1400,14 @@ You will also be given a real-time project that will boost your confidence and y
 				  <div class="col s6 explore-ll" style="height:min-content">
 					  <ul>
 						  <li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
-						  <li><a class="footerLink" href="index.html#menu2">TERE LIYE</a></li>
-						  <li><a class="footerLink" href="index.html#menu2">BACK TO FUTURE</a></li>
-						  <li><a class="footerLink" href="index.html#newcont">WE ARE GROOT</a></li>
+						  <li><a class="footerLink" href="index.html#tl">TERE LIYE</a></li>
+						  <li><a class="footerLink" href="index.html#btf">BACK TO FUTURE</a></li>
+						  <li><a class="footerLink" href="index.html#wrgrt">WE ARE GROOT</a></li>
 					  </ul>
 				  </div>
 				  <div class="col s6 explore-ll">
 					  <ul>
-						  <li><a class="footerLink" href="index.html#teamcontmain">BLOG</a></li>
+						  <li><a class="footerLink" href="blogPage.html">BLOG</a></li>
 						  <li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
 						  <li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
 					  </ul>
@@ -1375,10 +1415,9 @@ You will also be given a real-time project that will boost your confidence and y
 				  <div class="col s explore-l">
 					<ul>
 						<li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
-						<li><a class="footerLink" href="index.html#menu2">TERE LIYE</a></li>
-						<li><a class="footerLink" href="index.html#menu2">BACK TO FUTURE</a></li>
-						<li><a class="footerLink" href="index.html#newcont">WE ARE GROOT</a></li>
-						<li><a class="footerLink" href="index.html#teamcontmain">BLOG</a></li>
+						  <li><a class="footerLink" href="index.html#tl">TERE LIYE</a></li>
+						  <li><a class="footerLink" href="index.html#btf">BACK TO FUTURE</a></li>
+						  <li><a class="footerLink" href="index.html#wrgrt">WE ARE GROOT</a></li><li><a class="footerLink" href="blogPage.html">BLOG</a></li>
 						<li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
 						<li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
 					</ul>
@@ -1434,9 +1473,9 @@ You will also be given a real-time project that will boost your confidence and y
 					  <div class="f-logos hide-on-small-only" style="background-image:url(upi2.jpg)"></div>
 				  </div>
 				  <div  style="display:flex;flex-flow:row nowrap;">
-					  <div class="f-logos" style="background-image:url(fb2.jpg)"></div>
-					  <div class="f-logos" style="background-image:url(insta2.jpg)"></div>
-					  <div class="f-logos" style="background-image:url(linkedin2.jpg)"></div>
+					  <div class="f-logos" style="height:25px;width:25px;background-image:url(fb2.jpg)"></div>
+					  <div class="f-logos" style="height:25px;width:25px;background-image:url(insta2.jpg)"></div>
+					  <div class="f-logos" style="height:25px;width:25px;background-image:url(linkedin2.jpg)"></div>
 				  </div>
 		  </div>
 	  </div>
@@ -1485,20 +1524,30 @@ You will also be given a real-time project that will boost your confidence and y
 			function hey(){
 				alert("heyyyy")
 			}
-			function goleft(){
-				document.getElementById("teamslider1").style.transform ="translateX(210px)";
-				document.getElementsByClassName("teamcard")[0].style.opacity ="1"
-				document.getElementsByClassName("teamcard")[1].style.opacity ="1"
-				document.getElementById("lastcard1").style.opacity ="0"
-				document.getElementById("lastcard2").style.opacity ="0"
+			function goright(){
+				document.getElementById("teamslider").style.transform ="translateX(-50%)" 
+				document.getElementById("teamslider").style.opacity ="0" 
+				setTimeout(() => {
+					document.getElementById("teamslider").style.display ="none" 
+					document.getElementById("teamslider1").style.display ="flex";
+					setTimeout(() => {
+						document.getElementById("teamslider1").style.opacity ="1";
+						document.getElementById("teamslider1").style.transform ="translateX(0px)";
+					}, 100);
+				}, 100);
 				
 			  }
-			  function goright(){
-				document.getElementById("teamslider1").style.transform ="translateX(-210px)";
-				document.getElementsByClassName("teamcard")[0].style.opacity ="0"
-				document.getElementsByClassName("teamcard")[1].style.opacity ="0"
-				document.getElementById("lastcard1").style.opacity ="1"
-				document.getElementById("lastcard2").style.opacity ="1"
+			  function goleft(){
+				document.getElementById("teamslider1").style.transform ="translateX(50%)" 
+				document.getElementById("teamslider1").style.opacity ="0" 
+				setTimeout(() => {
+					document.getElementById("teamslider1").style.display ="none" 
+					document.getElementById("teamslider").style.display ="flex";
+					setTimeout(() => {
+						document.getElementById("teamslider").style.opacity ="1";
+						document.getElementById("teamslider").style.transform ="translateX(0px)";
+					}, 100);
+				}, 250);
 			}
 		$('#exampleSlider').multislider({
 			interval: 2000,
@@ -1590,7 +1639,7 @@ You will also be given a real-time project that will boost your confidence and y
 		var s = skrollr.init();
 		</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<!-- <script src="particles.min.js"></script> -->
+	<script src="particles.min.js"></script>
 	<script>
 		particlesJS('particles-js',{
 			"particles": {
@@ -1727,6 +1776,73 @@ You will also be given a real-time project that will boost your confidence and y
 	</script>
 	<script src="common.js"></script>
 	<script>
+
+		element = document.getElementById("logoscontainer")
+vid = document.getElementById("video")
+vid.controls = false
+Width = 800
+maximize = false
+function videostart(){
+
+  if (maximize = 1) {
+	vid.poster = "none"
+    maximize = true
+	element.style.opacity = '0'
+    for (let x = 0; x <= Width; x++) {
+      element.style.width = Width - x + "px" 
+    }
+    setTimeout(() => {
+    element.style.display = "none"
+    vid.style.borderRadius = "15px" 
+    vid.style.width = "780px"
+    vid.style.height = "360px"
+    vid.play();
+    vid.controls = true
+    }, 1000);
+  }
+}
+function videostop(){
+  if (maximize) {
+  maximize = false
+  element.style.display = "flex"
+  vid.style.borderRadius = "10px" 
+  vid.controls = false
+  vid.style.width = "260px"
+  vid.style.height = "120px"
+  setTimeout(() => {
+    for (let x = 0; x <= Width; x++) {
+      element.style.width = x + "px" 
+    }
+    setTimeout(() => {
+      element.style.opacity = '1'
+    }, 500);
+  }, 1000);
+  }
+      
+}
+
+
+function videoset(){
+  const newtarget = document.getElementById("logocont");
+  function handleIntersection(entries) {
+    entries.map((entry) => {
+      if (!entry.isIntersecting) {
+        videostop();
+        vid.pause()
+      } 
+    });
+    
+  }
+  const newoptions = {
+      threshold: 0.1,
+    }
+  const observer = new IntersectionObserver(handleIntersection,newoptions);
+  
+  observer.observe(newtarget);
+  
+}
+
+
 		getneww();getnewww();videoset();get51();getnew();get4();get11();get41();get42();Switch(1);
 	</script>
 	<script src="common1.js"></script>

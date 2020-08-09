@@ -1,8 +1,7 @@
 body{
     font-size: 1.4em;
     height: fit-content !important;
-    overflow-x: hidden;    
-}
+    }
 video:hover{
     transform: scale(1.1);
     
@@ -236,15 +235,24 @@ video,#logoscontainer{
     justify-content: center;
     align-items: flex-start;
     z-index: 900;
-    transform: translateX(25%);
+    opacity: 0;
+}
+#teamslider1{
+    display: none;
+    transform: translateX(50%);
+    /* background-color: #4b555f; */
+}
+#teamslider {
+   opacity: 1;
 }
 
 .teamcontmain{
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     overflow-x: hidden;
     align-items: center;
-    height: fit-content;
+    min-height: 24vw;
+    max-height: 320px;
 }
 .teamcontmain *{
     transition: 0.3s ;
@@ -258,11 +266,10 @@ video,#logoscontainer{
     align-items: center;
 }
 .teamcard{
-    min-height: 26vw;
-    min-width:16vw;
+    min-width: 16vw;
+    min-height: 23vw;
     max-height: 300px;
     max-width: 250px;
-    opacity: 0;
     background-color: #f4d03e;
     margin: 5px ;
     display: flex;
@@ -270,17 +277,18 @@ video,#logoscontainer{
     align-items: center;
     border-radius: 5px;
     font-size:1.2em;
-    background-position: top;
+    background-position: bottom;
+
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .teamcard:hover{
-    background-position: 10% 0%;
+    background-position: 10px 0% !important;
 }
 .teamcard:hover .teamdesc{
     opacity: 1;
-    transform: translate(10%,0%);
+    transform: translate(0%,0%);
     
 }
 .teamcard:hover .teamdesc1{
@@ -294,7 +302,7 @@ video,#logoscontainer{
     position: relative;
     border-radius: 5px;
     top: 100%;
-    transform: translate(0%,0%);
+    transform: translate(-20%,0%);
     color: white;
     font-family: sans-serif;
     text-align: left;
@@ -304,8 +312,8 @@ video,#logoscontainer{
 
 
 .teamdesc1{
-    min-height: 26vw;
-    min-width:16vw;
+    min-width: 16vw;
+    min-height: 23vw;
     max-height: 300px;
     max-width: 250px;
     border-radius: 5px;
@@ -502,7 +510,7 @@ h3{
     
     
 }
-.modaltext p{
+.modaltext p,li{
     font-size: 15px ;
 }
 .ourbutton{
