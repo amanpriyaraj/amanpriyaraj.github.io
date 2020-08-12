@@ -320,4 +320,7 @@ form{
     flex-flow: column;
     align-items: flex-end;
 }
+form *{
+    font-size: 0.8em !important;
+}
 

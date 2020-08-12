@@ -652,4 +652,3 @@ function gotop(){
 document.getElementsByTagName("video")[0].controls = true
 
 
-

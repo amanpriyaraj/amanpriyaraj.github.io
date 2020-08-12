@@ -237,11 +237,16 @@
 
                <h4>Leave a reply</h4><br>
                <form style="height: 300px;">
-                   <input placeholder="Name" name="name"><input placeholder="E-mail" name="E-mail">
-                   <textarea style="height: 100px;padding:10px;margin-top:10px;box-sizing:border-box" name="comment"  placeholder="Write Comment"></textarea>
-                   <input type="text" style="width: min-content;margin-top:10px;margin-right:10px;border-radius:10px;background-image:none;background-color:rgb(46, 46, 46)" type="submit" value="Submit" class="search">
+                   <input id="cname" placeholder="Name" name="name">
+                   <input id="cemail" placeholder="email" name="E-mail">
+                   <textarea id="ccomment" style="height: 100px;padding:10px;margin-top:10px;box-sizing:border-box" name="comment"  placeholder="Write Comment"></textarea>
+                   <div id="validaterror1" style="color:rgb(204, 0, 0);display:none;margin:5px;padding-left:10px;width:100%">Please fill the highlighted fields.</div>
+                   <div id="success" style="color: green;display:none;margin:5px;width:100%">Thank you! We will contact you soon.</div>
+                   <div onclick="commentsubmit()"  style="cursor:pointer;width: min-content;margin-top:10px;margin-right:10px;border-radius:10px;background-image:none;background-color:rgb(46, 46, 46);padding: 10px 20px" class="search">
+                        Submit
+                   </div>
                </form>
-               
+
             </div>
 
             
@@ -291,10 +296,13 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="newsletter-cont">
-                    <h6 class="news-header" style="width: 100%;text-align:center">Subscribe to our newsletter</h6>
-                    <input name="newsletter" type="text" placeholder="Enter E-mail">
-                    <div class="search waves-effect waves-light  modal-trigger">
+                <div class="newsletter-cont" style="text-align: left;" >
+                    <span class="news-head" style="width: 100%;color:black">Subscribe to newsletter</span>
+                    <input name="entry.1506121739" id="newsletter" type="email" required placeholder="Enter E-mail">
+                    <div id="validaterror" style="color: red;display:none;margin: 0px;font-size:15px;width:100%">Please fill the  field.</div>
+                    <div id="success" style="color: rgb(22, 22, 22);font-weight:800;display:none;margin:0px;font-size:15px;width:100%">See you in the mailbox!</div>
+        
+                    <div onclick="newslettersubmit()" style="max-width: max-content;padding:10px"class="search waves-effect waves-light  modal-trigger">
                         SUBSCRIBE
                     </div>
                 </div>
@@ -407,7 +415,8 @@
       </footer>
       <script src="common1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        
+        <script src="newsletter.js"></script>
+        <script src="comment.js"></script>
     </body>
 
 </html>

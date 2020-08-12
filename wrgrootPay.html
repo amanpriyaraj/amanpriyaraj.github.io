@@ -13,8 +13,13 @@
   
   <style>
     
-    .container{
-        width: 50%;
+    #regForm{
+        font-size: 0.9em !important;
+        background-color: #4b555f !important;
+    }
+    .containe{
+        width: 80% !important;
+        
     }
     .search{
         padding: 10px;
@@ -29,16 +34,21 @@
     
     }
     
-    
+    @media  (max-width: 600px) {
+        #regform{
+            font-size: 0.9em !important;
+            background-color: #4b555f;
+        }
+    }
   </style>
-  <link rel="stylesheet"  href="footer.css">
-	<link rel="stylesheet"  href="header.css">
+  <link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="header.css">
 </head>
 <body>
     <div class="navbar-fixed">
 		
 		
-        <div id="nav11" style="box-shadow: 0px 2px 10px #888888;">
+        <div id="nav11"  style="box-shadow: 0px 2px 10px #888888;">
             <a href="index.html#homeMain" id="logo"  style="margin-left:40px;"></a>
             <div class="menu" style="font-family:Graphik,sans-serif;">
                 <a href="index.html#homeMain"   class="links">Home</a>
@@ -57,7 +67,6 @@
                 <a class="links" href="index.html#contactus"   >Contact Us</a>
                 <div class="hamburger" onclick="showrespmenu()"></div>
             </div>
-            
         </div>
         <div class="resp-menu" style="width:100%;margin-top:80px;position:fixed">
             <a class="resp-link" href="index.html#homeMain">Home</a>
@@ -72,26 +81,46 @@
                 <a class="resp-link drop2"  href=" index.html#teamcontmain">Our Team</a>
                 <a class="resp-link"   href="index.html#contactus">Contact Us</a>
         </div>
+
 	</div>
 <br><br><br><br>
- <div class="container"> 
+ <div class="container" style="min-width: 90vw;font-size:1px"> 
      <h2>Enrollment</h2> 
      <p>Please fill in the necessary details for course enrollment and Enroll upon completion.</p>
      <p><small>Please note that all fields are mandatory</small></p>
      <form action="" class="needs-validation" id="regForm" novalidate>
      <div class="form-group"> 
-     <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required> 
+     <input type="text" class="form-control" id="name" placeholder="Enter Name" name="entry.1283899509" required> 
      <div class="valid-feedback">: )</div>
      <div class="invalid-feedback">Please fill out this field.</div></div>
      <div class="form-group"> 
-     <input type="email" class="form-control" id="eml" placeholder="Enter E-mail" name="eml" required>
+     <input type="email" class="form-control" id="eml" placeholder="Enter E-mail" name="entry.1037895781" required>
      <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div>
-     <div class="form-group">  
-         <input type="text" class="form-control" id="phn" placeholder="Enter Your Phone Number" name="phn" required> <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div>
-         <div class="form-group">  <input type="text" class="form-control" id="loc" placeholder="Enter Your Current Location" name="loc" required> <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div>
-         <div class="form-group"> <input type="text" class="form-control" id="shcl" placeholder="Enter School/College Name" name="shcl" required> <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div>
-         <div class="form-group">  <input type="text" class="form-control" id="clssyr" placeholder="Enter Class/Year of Study" name="clssyr" required> <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div></div>
-         <button type="reset" class="btn btn-primary search">Reset</button> <button type="submit" class="btn btn-success enroll">Proceed to payment</button> </form> <div class="modal fade" id="myModal" role="dialog"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal">&times;</button> <h4 class="modal-title"></h4> </div><div class="modal-body"> <p id="error"></p><p id="success"><span id="gentext"></span><span id="tranid" style="" ></span></p><p id="noteid"></p></div><div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div></div></div></div>
+     <div class="form-group">
+    <input type="text" class="form-control" id="phn" placeholder="Enter Your Phone Number" name="entry.718912665" required> 
+    <div class="valid-feedback">: )</div><div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">  
+    <input type="text" class="form-control" id="loc" placeholder="Enter Your Current Location" name="entry.1578828443" required>
+     <div class="valid-feedback">: )</div>
+     <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group"> 
+    <input type="text" class="form-control" id="shcl" placeholder="Enter School/College Name" name="entry.2003462973" required> 
+    <div class="valid-feedback">: )</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+</div>
+<div class="form-group">  
+    <input type="text" class="form-control" id="clssyr" placeholder="Enter Class/Year of Study" name="entry.274434682" required> 
+    <div class="valid-feedback">: )</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+</div>
+<button type="reset" class="btn hide-on-small-only btn-primary search">Reset</button> 
+<button  onclick="course21()" class="search btn-success enroll">Proceed to payment</button> 
+</form> 
+<div class="modal fade" id="myModal" role="dialog"> 
+    <div class="modal-dialog"> <div class="modal-content"> 
+        <div class="modal-header"> <button type="button" class="close" data-dismiss="modal">&times;</button> <h4 class="modal-title"></h4> </div><div class="modal-body"> <p id="error"></p><p id="success"><span id="gentext"></span><span id="tranid" ></span></p><p id="noteid"></p></div><div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div></div></div></div>
  </div>
 <br><br><br>
 
@@ -202,10 +231,10 @@ var keyCustom= 'rzp_live_yNnzSMBo7OM7Fq'; /*rzp_test_GkRuTpPJwzuZKb*/
 var amountCustom= 70000; /*in paisa*/
 
 /*Merchant Name*/
-var merchantNameCustom= "FundaSession"; 
+var merchantNameCustom= "NurtureCult"; 
 
 /*Description*/
-var descriptionCustom= "Course"; 
+var descriptionCustom= "We are gRoot"; 
  
  /*Logo for left top image*/
 var imageCustom= "../logorp.jpg";   /* Your logo url */     
@@ -214,17 +243,71 @@ var imageCustom= "../logorp.jpg";   /* Your logo url */
 /*  END SECRETS   */
 
 
-$("#myModal").modal({show:!1});(function(){window.addEventListener("load",function(){var c=document.getElementsByClassName("needs-validation");Array.prototype.filter.call(c,function(b){b.addEventListener("submit",function(a){!1===b.checkValidity()?(a.preventDefault(),a.stopPropagation()):(a.preventDefault(),a.stopPropagation(),callRazorPayScript());b.classList.add("was-validated")},!1)})},!1)})();
+$("#myModal").modal({show:!1});
+(function(){
+    window.addEventListener("load",function(){
+    var c=document.getElementsByClassName("needs-validation");
+    Array.prototype.filter.call(c,function(b){
+        b.addEventListener("submit",function(a){
+            !1===b.checkValidity()?(a.preventDefault(),a.stopPropagation()):(a.preventDefault(),a.stopPropagation(),callRazorPayScript());b.classList.add("was-validated")},!1)})},!1)})();
 var loadExternalScript=function(c){var b=$.Deferred(),a=document.createElement("script");a.async="async";a.type="text/javascript";a.src=c;a.onload=a.onreadystatechange=function(e,d){if(!a.readyState||/loaded|complete/.test(a.readyState))d?b.reject():b.resolve()};a.onerror=function(){b.reject()};$("head")[0].appendChild(a);return b.promise()},callRazorPayScript=function(){loadExternalScript("https://checkout.razorpay.com/v1/checkout.js").then(function(){var c={key:keyCustom,protocol:"https",hostname:"api.razorpay.com",
-amount:amountCustom,name:merchantNameCustom,description:descriptionCustom,image:imageCustom,prefill:{name:$("#name").val().trim(),email:$("#eml").val().trim(),contact:$("#phn").val().trim()},theme:{color:"#b9a76e"},handler:function(b,a){var h=b.razorpay_payment_id;$("#regForm").trigger("reset");$(".modal-title").text("Your Payment request is received successfully!");$("#gentext").html("Your transaction id is : ");$("#tranid").html("<b>"+h+"</b>");$("#noteid").text("Please keep this transaction id for any future reference");$("#myModal").modal("show")}};
+amount:amountCustom,name:merchantNameCustom,description:descriptionCustom,image:imageCustom,prefill:{name:$("#name").val().trim(),email:$("#eml").val().trim(),contact:$("#phn").val().trim()},theme:{color:"#b9a76e"},
+handler:function(b,a){
+    var h=b.razorpay_payment_id;
+    course1();
+    $(".modal-title").text("Your Payment request is received successfully!");
+    $("#gentext").html("Your transaction id is : ");$("#tranid").html("<b>"+h+"</b>");
+    $("#noteid").text("Please keep this transaction id for any future reference");
+    $("#myModal").modal("show")
+    function clickBody() {
+        window.location.href = 'index.html'
+    }
+    document.body.addEventListener("click", clickBody)
+}};
 window.rzpay=new Razorpay(c);rzpay.open()})};
  
-  
+
 
   
 </script>
+
+<script>
+    
+    function course1(){
+        alert("hey")
+        field1 = $("#name").val();
+        field2 = $("#eml").val();
+        field3 = $("#phn").val();
+        field4 = $("#loc").val();
+        field5 = $("#shcl").val();
+        field6 = $("#clssyr").val();
+       
+       $.ajax({
+   
+       url: "https://docs.google.com/forms/d/e/1FAIpQLSf3Kp944ZPlMMkEhwgK2ViVdvD_XK8csSlhXWkGsWzAMA2diw/formResponse?",
+       data: {"entry.1283899509": field1, "entry.1037895781": field2, "entry.718912665": field3, "entry.1578828443": field4, "entry.2003462973": field5, "entry.274434682": field6 },
+       type: "POST",
+       dataType: "xml",
+       success: function(d)
+       {
+       },
+       error: function(x, y, z)
+           {
+
+        $("#name").val() ="" ;
+        $("#eml").val() ="" ;
+        $("#phn").val() ="" ;
+        $("#loc").val() ="" ;
+        $("#shcl").val() ="" ;
+        $("#clssyr").val() ="" ;
+        
+        }
+   });
+   return false;
+   }
+   
+</script>
 <script src="common.js"></script>
 <script src="common1.js"></script>
-
 </body>
 </html>

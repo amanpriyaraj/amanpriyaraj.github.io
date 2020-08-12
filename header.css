@@ -6,6 +6,7 @@
 	width: calc(100% - 40px);
 	align-items: center;
     margin: 20px;
+    opacity: 0px !important;
     box-sizing: border-box;
     flex-flow: row;
     justify-content: space-between;

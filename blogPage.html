@@ -238,8 +238,11 @@
                 </div> -->
                 <div class="newsletter-cont" style="text-align: left;" >
                     <span class="news-head" style="width: 100%;color:black">Subscribe to newsletter</span>
-                    <input name="newsletter" type="text" placeholder="Enter E-mail">
-                    <div  style="max-width: max-content;padding:10px"class="search waves-effect waves-light  modal-trigger">
+                    <input name="entry.1506121739" id="newsletter" type="email" required placeholder="Enter E-mail">
+                    <div id="validaterror" style="color: red;display:none;margin: 0px;font-size:15px;width:100%">Please fill the  field.</div>
+                    <div id="success" style="color: rgb(22, 22, 22);font-weight:800;display:none;margin:0px;font-size:15px;width:100%">See you in the mailbox!</div>
+        
+                    <div onclick="newslettersubmit()" style="max-width: max-content;padding:10px"class="search waves-effect waves-light  modal-trigger">
                         SUBSCRIBE
                     </div>
                 </div>
@@ -353,6 +356,7 @@
       </footer>
       <script src="common1.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="newsletter.js"></script>
     </body>
 
 </html>

@@ -1778,3 +1778,8 @@
 	}
 
 }(window, document));
+
+
+if(screen.width >700){
+	var s = skrollr.init();
+}

@@ -3,26 +3,24 @@
    <head>
      <!--Import Google Icon Font-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-     
+
 
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	 
-	<!-- CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
      <!--Import Google Icon Font-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	
+
+
      <!-- Compiled and minified CSS -->
-	 
+
 	 <!--Import icons-->
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
@@ -34,12 +32,12 @@
      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
 	 <link rel="stylesheet" href="header.css">
 	 <link rel="stylesheet" href="footer.css">
-	 <link rel="shortcut icon" href="../favicon.ico"> 
+	 <link rel="shortcut icon" href="../favicon.ico">
 	 <!-- jquery -->
 	<script src="jquery.min.js"></script>
 	<script src="jquery.hover3d.js"></script>
 	<link rel="stylesheet" href="style.css">
-	
+
 	<link rel="stylesheet" href="header.css">
 	<script>
 		document.getElementById("svg").style.opacity ="0"
@@ -56,19 +54,20 @@
 			document.getElementById("linkcont").style.overflow = "hidden";
 		  }
 	</script>
-	
+
 	<style>
 		html{
 			scroll-behavior: smooth;
 		}
 		body {
 			font-family: proxima-nova,sans-serif;
-			height: fit-content;
+			overflow-y: scroll !important ;
+			-webkit-overflow-scrolling: touch;
 		}
 		body *{
 			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
 			font-family: font;
-			
+
 		}
 		a{
 			color: black;
@@ -125,18 +124,18 @@
 			height:fit-content;
 		}
 		.screen{
-			height: fit-content;			
+			height: fit-content;
 			width: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			
+
 			padding: 40px;
 			flex-flow: column nowrap;
 		}
 		.screen2{
-			
+
 			width: 100%;
 			display: flex;
 			justify-content: center;
@@ -152,7 +151,7 @@
 		#ourteam{
 			height: 600px;
 		}
-		
+
 		.writingspace{
 			display: flex;
 			width: 90%;
@@ -176,7 +175,7 @@
 			justify-content: space-around;
 			align-items: center;
 		}
-		
+
 		.facesCont{
 			display: flex;
 			width: 100%;
@@ -186,7 +185,7 @@
 		}
 		.face{
 			width: 50px;
-			
+
 			height: 50px;
 			background-color: grey;
 			margin: 10px;
@@ -201,7 +200,7 @@
 			margin-bottom: 30px;
 			display: flex;
 			justify-content: center;
-			
+
 		}
 		.scont{
 			opacity: 0;
@@ -219,13 +218,13 @@
 			box-shadow: -5px 5px 5px 0px lightgray;
 			transform: translate(5px,-5px);
 		}
-		
+
 
 		.hovers{
 			width: 32vw;
 			height: 25vw;
 			min-height: 200px;
-			min-width: 200px;	
+			min-width: 200px;
 			text-align: center;
 			display: flex;
 			justify-content: center;
@@ -264,7 +263,7 @@
 			align-items: flex-start;
 			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
 		}
-		
+
 		.imgcont:hover{
 			transform: scale(1.1);
 		}
@@ -289,8 +288,8 @@
 		}
 		.logoCont{
 			padding:60px;
-			display:flex; 
-			flex-flow:row; 
+			display:flex;
+			flex-flow:row;
 			justify-content:space-between;
 			background-color:rgba(211, 211, 211, 0.274)
 		}
@@ -312,7 +311,7 @@
 			opacity: 0;
 			transition: 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
 		}
-		
+
 		.car-cont{
 			display: flex;
 			width:fit-content;
@@ -322,7 +321,7 @@
 		video{
 			border-radius: 10px;
 			box-shadow: 0px 0px 20px 0px #302d1498;
-			
+
 		}
 
 		.carEl{
@@ -339,16 +338,16 @@
 		#car1{
 			background-image: url(2.jpg);
 			transform: translateX(100%);
-			
+
 		}
 		#car2{
 			background-image: url(3.jpg);
-			z-index: 100;		
+			z-index: 100;
 		}
 		#car3{
 			background-image: url(card.jpg);
 			transform: translateX(-100%);
-		
+
 		}
 		#car1,#car3{
 			width: 280px;
@@ -376,8 +375,8 @@
 			box-shadow: -2px 2px 5px 0px rgb(36, 36, 36);
 			left: 100%;
 			transform: translateX(-100%);
-			
-		
+
+
 		}
 		.search2{
 			padding: 10px 20px;
@@ -386,6 +385,7 @@
 			text-align: center;
 			font-size: 15px;
 			color: white;
+			cursor: pointer;
 			width: fit-content;
 			display: flex;
 			bottom: 0px;
@@ -394,8 +394,8 @@
 			text-decoration: none;
 			background-color: rgb(29, 29, 29);
 			box-shadow: -2px 2px 10px 0px rgb(94, 94, 94);
-			
-		
+
+
 		}
 		.search3{
 			padding: 10px 20px;
@@ -411,8 +411,8 @@
 			margin-right: 100px;
 			background-color: rgb(29, 29, 29);
 			box-shadow: 0px 0px 10px 0px rgba(161, 161, 161, 0.589);
-			
-		
+
+
 		}
 		.imgcont, .textcont{
 			display: flex;
@@ -420,9 +420,9 @@
 			justify-content: flex-start;
 			text-align: center !important;
 			transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
-			
+
 		}
-		
+
 		.textcont{
 			height: fit-content;
 			justify-content: space-between;
@@ -460,7 +460,7 @@
 			width: 100%;
 			height: 100%;
 			margin-bottom: 30px;
-			
+
 		}
 		.tname{
 			z-index: -1;
@@ -468,9 +468,9 @@
 			top:-20px;
 
 		}
-		
-		
-		
+
+
+
 		.textcont{
 			max-width: 550px;
 			min-width: 580px;
@@ -484,7 +484,7 @@
 			text-align: center !important;
 		}
 		<!--  -->
-		
+
 		.card-cont{
 			display: flex;
 			flex-flow: column;
@@ -497,13 +497,14 @@
 			flex-flow: row nowrap;
 			padding: 30px;
 			width: fit-content;
-			
+
 		}
 		.hcard{
-			
+
 			width: 300px;
-			cursor: pointer;
+			max-width: 100%;
 			height: 200px;
+			cursor: pointer;
 			border-radius: 10px;
 			background-position: center;
 			background-size: cover;
@@ -517,9 +518,9 @@
 		}
 		.hcont{
 			background-color: rgba(0, 0, 0, 0.699);
-			min-width:300px;
-			max-width:300px;
-			height: 100%;
+			min-width: 300px;
+			width: 100%;
+			height: 200px;
 			display: flex;
 			border-radius: 10px;
 			margin: 0px;
@@ -534,7 +535,7 @@
 		.hcont div{
 			display: flex;
 		}
-		
+
 		.hcard:nth-child(2){
 			transform: translateX(-330px);
 		}
@@ -547,13 +548,14 @@
 			transition: 0.5s ease;
 			padding:10px;
 			width:16vw;
+			max-width: 300px;
 			min-width: fit-content;
 			height: 70px;
 			text-align:center;
 			font-size:1.4vw;
 			font-family: adam;
 		}
-		
+
 		.logo:hover{
 			opacity: 1;
 			color: #F1C40F;
@@ -576,13 +578,13 @@
 			opacity: 1;
 		}
 
-		
+
 		  /* The typewriter cursor effect */
 		  @keyframes blink-caret {
 			from, to { border-color: transparent }
 			50% { border-color: black; }
 		  }
-		
+
 
 		@media screen and (min-width: 760px) {
 			.homeMain {
@@ -592,7 +594,7 @@
 				padding-top: 10px;
 				line-height: 24px;
 			}
-			
+
 			.footerSide {
 				margin-top:80px;
 				padding:10px;
@@ -637,10 +639,10 @@
 		#nav11,#nav11 *{
 			background-color: #ffffff;
 		}
-		
-		
+
+
 		.homeMain{
-			
+
 			justify-content: center;
 			align-items: center;
 			flex-flow: column;
@@ -650,7 +652,7 @@
 			background-repeat: none;
 			background-size: cover;
 		}
-		
+
 		.footerLink {
 			color: #C6C6C6;
 			font-family: 'Maven Pro',sans-serif;
@@ -694,8 +696,8 @@
 		}
 
 
-		
-		
+
+
 		.search{
 			padding: 10px;
 			margin: 10px;
@@ -705,22 +707,22 @@
 			font-size: medium;
 			background-color: #2ECC71;
 			box-shadow: -2px 2px 5px 0px rgb(36, 36, 36);
-		
+
 		}
 		.infocont{
 			display: flex;
 			flex-flow: column nowrap;
 			justify-content: space-between;
 			padding: 50px 30px 30px 30px;
-			
+
 		}
-		
+
 	</style>
-	
-	
+
+
 	</head>
 
-   <body onload="drawsvg()"> 	
+   <body onload="drawsvg()">
 	<div id="nav11" style="box-shadow: 0px 2px 10px #888888;">
 		<a href="index.html#homeMain" id="logo"  ></a>
 		<div class="menu" style="font-family:Graphik,sans-serif;">
@@ -755,20 +757,20 @@
 			<a class="resp-link"   href="index.html#contactus">Contact Us</a>
 	</div>
 
-	
+
 
 	<div>
-		
+
 	</div>
-	
+
 	   <div style="height:66vw; ">
 			<div class="homeMain" id="homeMain">
 				<div id="particles-js"></div>
 				<div id="bg1"></div>
-				<div id="wordsheet" data-0="background-position:-40px 0px;" data-end="background-position:-40px -600px;"></div>
+				<div id="wordsheet" data-0="background-position:-6vw 0px;" data-end="background-position:-6vw -1000px;"></div>
 
 			<div style="width:100%;height:66vw;display:flex;justify-content:center;align-items:center">
-				<svg id="svg" style="margin-top:8vw;margin-left:6vw" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 680 680" height="34vw" width="34vw">
+				<svg id="svg" style="margin-top:14vw;margin-left:6vw" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 680 680" height="34vw" width="34vw">
 					<defs>
 					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M55.89 140.79C55.34 137.36 54.98 133.91 54.84 130.44C54.58 123.93 55.44 119.55 55.51 118.34C56.05 114.9 57.22 111.58 58.98 108.55C60.38 106.2 62.13 104.08 64.19 102.26C66.33 100.39 68.74 98.85 71.35 97.68C77.08 95.04 83.71 94.15 85.09 93.76C87.63 93.34 90.19 93.08 92.77 92.97C100.68 92.66 104.89 94.65 106.23 94.84C114.31 98 117.46 104.51 118.71 105.58C120.33 108.41 121.64 111.4 122.62 114.51C123.99 118.76 124.57 122.76 124.78 123.68C124.79 123.73 124.8 123.78 124.81 123.83C124.92 124.52 125.47 127.98 126.46 134.2L104.37 137.73C103.35 131.32 102.79 127.77 102.67 127.06C101.85 121.87 100.83 118.63 100.62 117.69C99.45 113.67 97.18 112.16 96.8 111.55C96.73 111.49 96.66 111.44 96.59 111.38C95.8 110.8 94.89 110.39 93.92 110.19C91.47 109.62 88.47 110.2 87.87 110.2C86.84 110.36 85.82 110.59 84.83 110.9C83.26 111.4 82.34 111.99 82.07 112.11C81.13 112.66 80.31 113.38 79.66 114.24C78.66 115.61 77.97 117.18 77.64 118.83C77.42 119.86 77.31 120.91 77.3 121.97C77.24 126.55 78.04 131.12 78.12 132.14C78.13 132.17 78.13 132.2 78.14 132.23C78.99 137.59 85.83 180.52 86.69 185.88C86.91 187.33 87.19 188.76 87.51 190.19C87.98 192.29 88.44 193.67 88.54 194.05C88.83 194.97 89.16 195.87 89.54 196.76C89.95 197.74 90.46 198.67 91.08 199.55C92.39 201.39 93.86 202.17 94.17 202.46C94.29 202.54 94.42 202.61 94.55 202.68C97.78 204.43 101.93 203.54 102.75 203.63C103.72 203.48 104.68 203.26 105.62 202.97C107.06 202.51 107.9 201.96 108.16 201.85C109.09 201.31 109.89 200.56 110.49 199.66C111.28 198.44 111.82 197.08 112.09 195.67C112.41 194.12 112.37 192.66 112.4 192.33C112.4 192.25 112.4 192.17 112.4 192.09C112.34 189.07 112.02 185.74 111.44 182.08L109.67 170.95L131.75 167.42C132.7 173.37 133.23 176.67 133.33 177.33C133.86 180.59 134.17 183.87 134.24 187.17C134.31 190.54 134.06 193.91 133.47 197.24C131.87 206.17 126.07 210.66 125.24 212.15C123.3 213.87 121.11 215.29 118.75 216.38C113.19 219 106.59 219.88 105.24 220.27C102.42 220.74 99.57 221 96.71 221.05C92.25 221.1 89.3 220.38 88.47 220.31C86.48 219.9 84.54 219.26 82.7 218.41C73.99 214.33 70.74 206.88 69.41 205.6C64.9 197.01 63.62 187.23 62.97 185.19C62.95 185.07 62.93 184.95 62.91 184.84C62.91 184.84 56.6 145.19 55.89 140.79Z" id="d14N2eXKC7"></path>
 					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M177.95 143C177.81 142.11 177.64 141.22 177.44 140.33C176.98 138.25 176.49 137.05 176.38 136.69C176.17 136.13 175.91 135.58 175.6 135.07C175.06 134.18 174.5 133.71 174.38 133.56C174.18 133.37 173.96 133.2 173.73 133.05C172.03 131.91 169.4 132.47 168.92 132.41C168.32 132.5 167.72 132.65 167.14 132.86C166.08 133.26 165.48 133.79 165.29 133.9C165.13 134.03 164.98 134.17 164.84 134.31C164.12 135.06 163.6 135.96 163.31 136.94C163.2 137.33 163.11 137.72 163.05 138.12C162.82 139.66 162.81 141.41 163.01 143.36L163.55 148.74C151.44 150.21 144.71 151.02 143.36 151.19C142.99 148.38 142.83 145.54 142.91 142.7C143.05 138.26 143.98 135.4 144.1 134.59C144.79 132.05 145.94 129.64 147.48 127.47C149.6 124.62 152.37 122.29 155.57 120.67C160.83 117.92 167.06 117.11 168.34 116.72C170.78 116.31 173.26 116.13 175.73 116.18C184.01 116.41 187.83 120.42 189.18 120.89C195.75 126.58 197.14 135.63 198.02 137.26C198.2 138.08 198.35 138.9 198.48 139.72C199.13 143.79 204.31 176.35 204.96 180.42C205.74 185.3 206.44 188.34 206.6 189.22C207.47 193.15 208.19 195.58 208.37 196.29C208.62 197.15 208.87 198.02 209.12 198.89C209.42 199.94 209.7 200.92 209.97 201.81C198.58 203.63 192.26 204.64 190.99 204.85C190.7 203.93 190.39 203.01 190.09 202.09C189.46 200.22 188.86 198.5 188.72 198.1C187.45 194.47 187.03 193.22 186.84 192.68C186.83 192.63 186.81 192.59 186.8 192.54C186.09 198.13 182.87 202.1 182.43 203.17C180.68 205.56 178.22 207.37 175.4 208.35C174.07 208.83 172.7 209.19 171.3 209.4C169.45 209.71 167.58 209.76 165.72 209.54C163.86 209.32 162.05 208.78 160.38 207.94C155.53 205.51 153.22 201.77 152.43 201.08C149.33 196.66 148.9 192.44 148.51 191.47C147.19 183.24 149.32 178.54 149.41 177.11C151.62 170.97 155.47 167.42 156.14 166.34C158.45 164 160.95 161.86 163.63 159.95C164.65 159.22 165.69 158.52 166.75 157.84C170.81 155.27 174.94 152.86 179.16 150.62C178.43 146.05 178.03 143.51 177.95 143ZM180.81 160.99C177.71 163.52 175.57 165.48 174.99 165.98C173.79 167.07 172.67 168.24 171.65 169.5C171.21 170.04 170.79 170.6 170.39 171.17C169.53 172.41 168.83 173.75 168.3 175.15C168.1 175.7 167.93 176.26 167.78 176.83C167.51 177.95 167.38 179.1 167.38 180.25C167.38 181.31 167.47 182.37 167.64 183.41C167.79 184.41 168.02 185.4 168.32 186.36C168.81 187.9 169.41 188.83 169.53 189.1C169.89 189.71 170.32 190.28 170.81 190.8C171.4 191.44 172.12 191.96 172.92 192.34C174.46 193.03 175.97 192.76 176.31 192.81C176.41 192.79 176.52 192.78 176.62 192.76C178.65 192.44 179.91 191.32 180.28 191.16C181.91 189.89 182.81 188.58 183.09 188.29C183.32 187.98 183.54 187.66 183.76 187.34C184.08 186.84 184.27 186.48 184.32 186.39C184.47 186.11 184.61 185.82 184.72 185.53C183.94 180.62 181.2 163.44 180.81 160.99Z" id="b1lCuI4fUS"></path>
@@ -797,20 +799,20 @@
 							<g><use xlink:href="#b1lCuI4fUS" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g>
 							<g><use xlink:href="#bQgVsTAGn" opacity="1" fill="#414141" fill-opacity="1"></use>
 								<g><use xlink:href="#bQgVsTAGn" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g>
-								<g><use xlink:href="#a7Z5AH7R2" opacity="1" fill="none" fill-opacity="1"></use><g><use xlink:href="#a7Z5AH7R2" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#a5G9L1cevG" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#a5G9L1cevG" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#cAApTqFdI" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#cAApTqFdI" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bLnI3ZKgB" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#bLnI3ZKgB" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#f1UOuDOaCu" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#f1UOuDOaCu" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#c14RqtEyP" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#c14RqtEyP" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g1prTex20y" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g1prTex20y" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g4qwZ3jgch" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g4qwZ3jgch" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#baHF8yztR" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#baHF8yztR" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g1AnMORpHJ" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g1AnMORpHJ" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b5tiQ3EEdP" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b5tiQ3EEdP" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g35Me6MoPj" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g35Me6MoPj" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#crQiM8hi7" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#crQiM8hi7" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#e1xBB57xAO" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#e1xBB57xAO" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b1hNlRCfPk" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b1hNlRCfPk" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b31SsPiPc" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b31SsPiPc" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#aAowFUEJd" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#aAowFUEJd" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g></g></g></svg>	
-	
+								<g><use xlink:href="#a7Z5AH7R2" opacity="1" fill="none" fill-opacity="1"></use><g><use xlink:href="#a7Z5AH7R2" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#a5G9L1cevG" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#a5G9L1cevG" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#cAApTqFdI" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#cAApTqFdI" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#bLnI3ZKgB" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#bLnI3ZKgB" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#f1UOuDOaCu" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#f1UOuDOaCu" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#c14RqtEyP" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#c14RqtEyP" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g1prTex20y" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g1prTex20y" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g4qwZ3jgch" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g4qwZ3jgch" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#baHF8yztR" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#baHF8yztR" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g1AnMORpHJ" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g1AnMORpHJ" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b5tiQ3EEdP" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b5tiQ3EEdP" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#g35Me6MoPj" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#g35Me6MoPj" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#crQiM8hi7" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#crQiM8hi7" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#e1xBB57xAO" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#e1xBB57xAO" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b1hNlRCfPk" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b1hNlRCfPk" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#b31SsPiPc" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#b31SsPiPc" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g><g><use xlink:href="#aAowFUEJd" opacity="1" fill="#414141" fill-opacity="1"></use><g><use xlink:href="#aAowFUEJd" opacity="1" fill-opacity="0" stroke="#414141" stroke-width="1" stroke-opacity="1"></use></g></g></g></g></svg>
+
 			</div>
 	</div>
 			<!-- NAVBAR HERE -->
-   
+
 		<!-- Dropdown Structure -->
-		
+
 		<!-- For PROGRAMS-->
-		
-		
-		
-		
-		
+
+
+
+
+
 	<script>
 		function colorChange(x) {
 			x.style.color = "#F4D03F";
@@ -820,7 +822,7 @@
 			x.style.color = "#737373";
 		}
 	</script>
-	
+
 	<ul class="sidenav" id="mobile-demo" >
 		<li><a href="index.html">HOME</a></li>
 		<li><a href="services.html" >SERVICES</a></li>
@@ -848,35 +850,35 @@
 					<div class="logo" >CAREER PATH</div>
 				</div>
 			</div>
-			
+
 
 		</div>
 	</div>
-	
-	
+
+
 	<div  style="width:100%;display:flex;align-items:center;flex-flow:column;margin:0px;">
 		<div class="row" style = "padding:30px 0px;margin:0px;border-bottom:1px solid rgb(168, 168, 168);justify-content:center !important;align-content:center !important;display:flex;flex-flow:row wrap;">
-			<div class="col s12 m5" style="width:500px;display:flex;justify-content:center !important;flex-flow:column;margin:0px">
+			<div class="col s12 m5" style="max-width:500px;display:flex;justify-content:center !important;flex-flow:column;margin:0px">
 				<img style="padding:0px;width:90px;height:95px" alt="" src="covid.png">
-				
+
 				<h3 class="rentSafe" style="margin-top:10px;height: fit-content;">Learn Safe <br>During <span style="color:#F1C40F;">COVID-19</span></br>
 			</div>
-			<div class="col s12 m5" style="width:500px;justify-content:center;margin:0px" style="font-size: 18px !important;">
+			<div class="col s12 m5" style="max-width:500px;justify-content:center;margin:0px" style="font-size: 18px !important;">
 				<div class="rentSafePara" style="text-align:left;font-size:18px" >
 					The greatest lesson that COVID-19 can teach humanity is that we are all in this together. Life doesn’t get easier or more forgiving, we get stronger and more resilient
 				When the world is running down, you make the best of what's still around. The secret of crisis management is not good vs. bad, it's preventing the bad from getting worse.
 				</div>
 			</div>
-			
-		
+
+
 		</div>
-		
+
 		<!-- <div style="text-align:center;background-color:white;padding:50px;padding-bottom:0px;margin-bottom:0px">
 			<h3 class="rentSafe" style="padding:0px;" >Perform All Tasks Online to</br> <span style="color:#F1C40F">Minimize Direct Contact</span></h3>
-			
+
 		</div> -->
-    </div> 
-	
+    </div>
+
 	<!-- <div class="carousel hide-on-small-only"  >
 		<div class="car-cont">
 		<div id="car1" class="carEl" href="#three!"></div>
@@ -884,15 +886,15 @@
 		<div  id="car3" class="carEl" href="#one!"></div>
 		</div>
 	</div> -->
-	
-	
-	
+
+
+
 	<br>
 	<br>
 	<div id="btf">
-			
+
 	</div>
-	
+
 
 	<div  style="width: 100%;background-color:#EAEDED;">
 		<div class="newcont"  style="display: flex;flex-flow:row wrap;justify-content:center !important;max-width: 1100px;">
@@ -909,8 +911,8 @@
 					<h3 style="font-weight: 800;" class="newtxt"></h3>
 				<p class="newpara">It is alright if you are not like “Sharma Ji ka beta”  who happens to know just everything. It is okay to not know what the syllabus is, or what the teacher/professor has taught in the class. We are like your elder siblings who will guide you in every step of your life. We will groom you in every possible way you need us to. Be it education or any other stuff we are here to give you a consultation in every aspect of life. So hop in and have fun because learning should be fun.</p>
 				<div style="display: flex;width:100%;justify-content:flex-end;">
-					<a href="btfPay.html"  class="search2">Register</a>
-					
+					<a href="index.html#card-cont"  class="search2">Register</a>
+
 				</div>
 				</div>
 			</div>
@@ -932,9 +934,9 @@
 				<p class="newpara">There are things that we can’t change or decide like our birth, death or the guy and girl we fall for. But not everything is drawn on our palm lines. Moving forward into the future you will realise where your passion lies but it might have already been late. So, join us on this journey where we embark into the future and carve our lines ourselves the way we want. The future doesn’t have to be so uncertain and unwelcoming. This is not a coaching or preaching, it is a beautiful journey where you will grow as a person. These sessions are our perspective of a complete education where we make you future-ready.</p>
 				<div style="display: flex;width:100%;justify-content:flex-end">
 					<a href="btfPay.html" style="display:flex"  class="search2">Book an appointment</a>
-					
+
 				</div>
-				
+
 			</div>
 			</div>
 		</div>
@@ -952,7 +954,7 @@
 			</div>
 			<div  style="min-width:50%;max-width:500px">
 				<div style="display: flex;flex-flow:column;margin:  10px 40px;text-align:justify">
-					<h3 style="font-weight: 800;" class="newtxt"></h3>	
+					<h3 style="font-weight: 800;" class="newtxt"></h3>
 				<p class="newpara">The concept of fighting until the end is not something new to us movie freaks. The world might get darker and darker but we need to hold our grounds and be hopeful till the end. Taking inspiration from such fightbacks we aim at being the roots to your cause, the support to your will and the godfather to your ambitions. Let us come together and form a cult of our own where we shall grow together and be part of a larger family and brighter future. We welcome you with open arms to our family where we shall share our ups and lows of life together and march forward into the life that we had dreamt of.</p>
 				<div style="display: flex;width:100%;justify-content:flex-end">
 					<a href="wrgrootPay.html"  class="search2">Join our family</a>
@@ -967,24 +969,24 @@
 		<div style="width: fit-content;display:flex;flex-flow:row wrap;justify-content:center;max-width:1200px">
 		<a onclick="modalopen()" class="hcard"  style="background-image: url(card1.jpg);cursor: pointer;padding: 0px;">
 			<div class="hcont" style="flex-flow: column;">
-					<h4>Technology</h4> 
-					<h6>&#8377; 250</h6> 
+					<h4>Technology</h4>
+					<h6>&#8377; 250</h6>
 			</div>
 		</a>
 		<a onclick="modalopen1()"  class="hcard " style="background-image: url(card2.jpg);padding: 0px;">
 			<div class="hcont" style="flex-flow: column;">
-					<h4>Family</h4> 
-					<h6>&#8377; 200</h6> 
+					<h4>Family</h4>
+					<h6>&#8377; 200</h6>
 			</div>
 		</a>
 		<a onclick="modalopen2()" class="hcard" style="background-image: url(card3.jpg);padding: 0px;">
 			<div class="hcont" style="flex-flow: column;">
-					<h4>Finance</h4> 
-					<h6>&#8377; 250</h6> 
+					<h4>Finance</h4>
+					<h6>&#8377; 250</h6>
 			</div>
 		</a>
-		
-		
+
+
 		</div>
 	</div>
 
@@ -1000,9 +1002,9 @@
 					<br><br>
 					In our schools, we seldom are introduced to topics like the working of internet, how applications survive in the market or even how to develop a working logic for any 'functionality'. Today, data is the new oil and if used to full potential, data can optimize and enhance everyone's style of living. Such is the importance of technology, that we cannot imagine our lives without it.
 					<br><br>
-					Did you know that over 90% of the engineering students end up having a job in coding profile? You will be quite surprised to know that half the students of this category have a pretty inadequate amount of knowledge of how to proceed in such a field and follow the herd behaviour in making not well-thought-out decisions concerning their career. 
+					Did you know that over 90% of the engineering students end up having a job in coding profile? You will be quite surprised to know that half the students of this category have a pretty inadequate amount of knowledge of how to proceed in such a field and follow the herd behaviour in making not well-thought-out decisions concerning their career.
 					<br><br>
-					For people like us, who are still figuring out what is the best possible path to success and getting quirky in making life decisions, this a perfect place to recognize and learn the true nature of tech. Come and learn the basics of technology, and explore a whole new realm with us. 
+					For people like us, who are still figuring out what is the best possible path to success and getting quirky in making life decisions, this a perfect place to recognize and learn the true nature of tech. Come and learn the basics of technology, and explore a whole new realm with us.
 					<br><br>
 					The aim of this course is to give a brief introduction to the application of the most common forms of Technology in the real world, covering a wide spectrum of our day to day life use cases, to its contribution in big Multi National Companies
 					<br><br>
@@ -1020,7 +1022,7 @@
 					<br><br>
 					People might think diving into such a vast domain might get hectic and tiresome, but we assure you all of it is worth for the insights you will gain as this course ends.</p>
 			</div>
-			
+
 			<a href="course1.html" class="ourbutton"  style="width: fit-content;"id="modalbutton1">Register</a>
 		</div>
 	</div>
@@ -1032,7 +1034,7 @@
 				<h3>header</h3>
 				<p>Description</p>
 			</div>
-			
+
 			<a href="course1.html" class="ourbutton"  style="width: fit-content;"id="modalbutton1">Register</a>
 		</div>
 	</div>
@@ -1044,14 +1046,14 @@
 				<h4>Family</h4>
 				<p>Has anyone ever taught you what to order in a cafe or restaurant? Or anything about the table etiquettes? Moving forward in life you will need to know how to behave and how your body language should be because society is judgemental and that is a fact. We judge people’s skills by how they talk or present themselves. No matter how petty this sounds, it is a fact.
 <br><br>
-					So, how to create your first impression? Why do you hesitate while going for a date? Why do you feel nervous while delivering a presentation? And how shall the dressing be for any specific kind of event? We can argue that we will learn this with experience but if it matters so much why not know it at the right time. Being able to carry yourself elegantly is an art It expresses one’s personality and people acknowledge your presence. 
+					So, how to create your first impression? Why do you hesitate while going for a date? Why do you feel nervous while delivering a presentation? And how shall the dressing be for any specific kind of event? We can argue that we will learn this with experience but if it matters so much why not know it at the right time. Being able to carry yourself elegantly is an art It expresses one’s personality and people acknowledge your presence.
 					<br><br>
-					Apart from that, there are other very basic life skills that define your everyday decisions. How to act and perform wisely? How to bargain with shopkeeper? How to tackle with your anger? How to manage your personal life with academics and corporate work? These are things that are not taught in a conventional education system but are highly needed. 
+					Apart from that, there are other very basic life skills that define your everyday decisions. How to act and perform wisely? How to bargain with shopkeeper? How to tackle with your anger? How to manage your personal life with academics and corporate work? These are things that are not taught in a conventional education system but are highly needed.
 					<br><br>
 					We have tried to pack all these life hacks in this week-long workshop. We can guarantee you that you will see a change in yourself and you will be able to explore the best version of yourself.
 					</p>
 			</div>
-			
+
 			<a href="course2.html" class="ourbutton"  style="width: fit-content;"id="modalbutton1">Register</a>
 		</div>
 	</div>
@@ -1061,12 +1063,12 @@
 			<div class="modaltext" >
 				<div class="exitbtn" onclick="modalclose2()">&#10006;</div>
 				<h4>Finance </h4>
-				
+
 				<p>Have you seen The Big Short or The Wolf of the Wall Street or for that matter Hritik Roshan in Zindagi Na Milegi Dobaara? It sounds cool right to call yourself an investor and keep piling up money? Well, let me tell you for a fact that Warren Buffet, one of the greatest investors of our time, started investing in stocks at the age of 11. Yes, you heard it right, 11! I remember watching Doraemon and Chhota Bheem at that age.
 					<br><br>
-					Frankly speaking, investing isn’t about complex statistics or probabilistic models. It can start with a simple understanding of current news revolving around the company and their promoter group. You slowly develop a clear understanding of the company’s technical charts and fundamental valuation to grow into a decent investor. It’s all about the experience, patience and instincts. 
+					Frankly speaking, investing isn’t about complex statistics or probabilistic models. It can start with a simple understanding of current news revolving around the company and their promoter group. You slowly develop a clear understanding of the company’s technical charts and fundamental valuation to grow into a decent investor. It’s all about the experience, patience and instincts.
 					 <br><br>
-					 How many schools teach us about the stock market or how to write a cheque or how to withdraw money from the bank. If we can dare to understand trigonometry at that age then we can surely give this a shot. In unprecedented times like this, investing is the best option to store and grow money and have a guaranteed income without a job. We need this! 
+					 How many schools teach us about the stock market or how to write a cheque or how to withdraw money from the bank. If we can dare to understand trigonometry at that age then we can surely give this a shot. In unprecedented times like this, investing is the best option to store and grow money and have a guaranteed income without a job. We need this!
 					 <br><br>
 					 You are a school kid or a college-going lad or a middle-age person re-thinking your life choices, this is the place where it all starts. Come and learn the basics of the stock market and earn a ton of money while having fun in this lockdown. Yes, ask the investors, lockdown can be fun!
 					 <br><br>
@@ -1082,21 +1084,21 @@
 					</ol>
 					<p>
 
-						All of this might sound gibberish right now but let me tell you that after this 1 week you will have command over your money and have a general awareness of day-to-day economics. 
+						All of this might sound gibberish right now but let me tell you that after this 1 week you will have command over your money and have a general awareness of day-to-day economics.
 						<br><p>
-						You will also be given a real-time project that will boost your confidence and you will also gain experience in being an actual investor. Top project performer will be receiving exciting prizes. 
+						You will also be given a real-time project that will boost your confidence and you will also gain experience in being an actual investor. Top project performer will be receiving exciting prizes.
 					</p>
 
 
 			</div>
-			
+
 			<a href="course3.html" class="ourbutton" id="modalbutton1">Register</a>
 		</div>
 	</div>
 
 
-				
-	
+
+
 	<div class="dyncont" style="display: flex;">
 		<div class="dynswitch">
 			<div id="dyn1" onclick="Switch(1)" >Back to the Future</div>
@@ -1131,12 +1133,12 @@
 				<div class="dynpara">Join us on this wonderful journey of nurturing yourself. Hurry Up!! Only a few seats available, just kidding.</div>
 			</div>
 			<div style="display: flex;width:100%;justify-content:flex-end;">
-							<a href="btfPay.html"  class="search3" >Register</a>
+							<a href="index.html#card-cont"  class="search3" >Register</a>
 
 			</div>
 		</div>
 		<div class="dynscr" >
-			
+
 			<div class="dyninfo">
 				<div>
 					<div class="dynholder">
@@ -1193,7 +1195,7 @@
 			<div class="dyninfo">
 				<div>
 					<div class="dynholder">
-						<div class="dynimg" style="background-image: url(gr3.jpg);"></div>
+						<div class="dynimg" style="background-image: url(gr3.jpg); "></div>
 					</div>
 				</div>
 				<div class="dynpara">Career-related advice (eg. CV building, public speaking)Free exclusive webinars having prominent speakers, free mentorship, personal updates on all our activities and virtual parties.</div>
@@ -1202,10 +1204,10 @@
 				<a href="wrgrootPay.html"  class="search3">Join our family</a>
 			</div>
 		</div>
-				
+
 	</div>
 
-	
+
 	<div style="background-color:#EAEDED;" class="screen" id="ourmission">
 		<div class="stitle"><h2  id="missions"></h2></div>
 		<div class="scont1" style="flex-flow: row wrap;justify-content:center;align-items:top;">
@@ -1225,14 +1227,14 @@
 			</div>
 		</div>
 	</div>
-	 
+
 	<div class="screen2" id="teamcontmain" style="flex-flow:column;padding:0px;">
-		
+
 		<h2 id="tteam" ></h2>
-		
+
 		<div class="teamcontmain"  style="max-width:1300px;overflow:hidden;">
 			<div id="left-button" onclick="goleft()"></div>
-			
+
 			<div class="teamcont" id="teamslider">
 				<div class="teamcard" id="firstcard" style="background-image: url(shashwat.jpg);">
 					<div class="teamdesc1">
@@ -1286,12 +1288,12 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 			<div class="teamcont" id="teamslider1">
-				
-				
-				
+
+
+
 				<div class="teamcard" style="background-image: url(yash.jpg);">
 					<div class="teamdesc1">
 						<div class="teamdesc">
@@ -1305,7 +1307,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="teamcard" style="background-image: url(nama.jpg);display:flex !important">
 					<div class="teamdesc1">
 						<div class="teamdesc">
@@ -1332,7 +1334,7 @@
 						</div>
 					</div>
 				</div>
-					
+
 				<div class="teamcard" style="background-image: url(umang3.jpg);">
 					<div class="teamdesc1">
 						<div class="teamdesc">
@@ -1349,11 +1351,11 @@
 			</div>
 			<div id="right-button" onclick="goright()"></div>
 		</div>
-		
+
 	</div>
 	</div>
-	
-	
+
+
 	<div id="contactus" style="background-color:#EAEDED;justify-content:center;padding-top:50px;flex-flow:row;font-size:15px ">
 		<div style="max-width:1000px;height:fit-content;flex-flow:row wrap; display:flex;box-sizing:border-box;justify-content:space-between;margin:auto;padding:20px">
 			<div class="postSpace" style="min-width:400px;width:50%;max-width:100%;display:flex;flex-flow:column;">
@@ -1373,17 +1375,18 @@
 					</div>
 				</div>
 			</div>
-		<form class="inputSpace" style="display: flex;min-width:400px;max-width:100%;margin:10px auto;">
-			<input placeholder="Name" >
-			<input placeholder="E-mail" >
-			<input style="margin-bottom: 10px;" placeholder="Subject" >
-			<textarea  style="height: 100px;border-radius:5px;padding:5px"placeholder="Message"></textarea>
-			<input type="submit" class="search2" style="padding:10px;margin:20px;margin-bottom:0px;margin-left:100%;transform:translateX(-100%); width:fit-content;border:none">
+		<form id="form" class="inputSpace" style="display: flex;min-width:400px;max-width:100%;margin:10px auto;">
+			<input id="namefield" required name="entry.37352416" placeholder="Name" >
+			<input id="emailfield" required name="entry.1878316948" placeholder="E-mail" >
+			<input id="subjectfield" required name="entry.1454958422" style="margin-bottom: 10px;" placeholder="Subject" >
+			<textarea id="messagefield" required name="entry.391054700" style="height: 100px;border-radius:5px;padding:5px"placeholder="Message"></textarea>
+			<div id="validaterror" style="color: rgb(204, 0, 0);opacity:0;margin:5px">Please fill the highlighted fields.</div>
+			<div id="success" style="color: green;opacity:0;display:none;margin:5px">Thank you! We will contact you soon.</div>
+			<div  onclick="contactsubmit()" class="search2" style="padding:5px 10px;margin:20px;margin-top:5px;margin-bottom:0px;margin-left:100%;transform:translateX(-100%); min-width:fit-content;border:none">Submit</div>
 		</form>
-
 </div>
 	</div>
-	
+
 	<!-- Footer -->
 	<footer class="page-footer" style="background-color:#4b555f">
 		<div class="" style="width:90%;margin:auto;">
@@ -1422,7 +1425,7 @@
 						<li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
 					</ul>
 				</div>
-				  
+
 				  </div>
 			  </div>
 			  <div class="col s6 m2 ">
@@ -1437,7 +1440,7 @@
 				<div class="row " ></div>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			  </div>
-			  
+
 			</div>
 				<div class="col s12 m4 hide-on-med-and-up" style="margin-top: 0px;">
 					<h3 style="font-family: sansa;">NurtureCult</h3>
@@ -1452,17 +1455,17 @@
 				  info@clustr.co.in
 				  </p>
 				  </div>
-				  
-				
+
+
 		</div>
 		<div class="footer-copyright" style="padding:0px 0px;padding-right:10px">
-		  
+
 		  <div style="display: flex;flex-flow:row;margin:auto;justify-content:space-between;max-width: 1370px;width:89%">
 			  <div  style="font-size:0.7em;display:flex;flex-flow:row;min-width:max-content;align-items:center">
 				  <span class="hide-on-small-only">© 2020 NurtureCult. All rights reserved</span>
-				  &nbsp;&nbsp; 
+				  &nbsp;&nbsp;
 				  <a href="T&C.html" style="text-decoration: underline;">Terms and Conditions</a>
-				  &nbsp;&nbsp; 
+				  &nbsp;&nbsp;
 				  <a href="PrivacyPolicy.html" style="text-decoration: underline;">Privacy Policy</a>
 				</div>
 				  <div class="" style="display:flex;flex-flow:row nowrap;">
@@ -1484,64 +1487,64 @@
 
 	    <!--JavaScript at end of body for optimized loading-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	
+
 		<!-- Include jQuery -->
-	
+
 		<!-- Include Multislider -->
 		<script src="js/multislider.min.js"></script>
-	
+
 		<!-- Initialize element with Multislider -->
 		<script>
 			function modalclose(){
 				document.getElementById("moodal1").style.display =" none"
-				document.body.style.overflowY ="visible" 
+				document.body.style.overflowY ="visible"
 
 			}
 			function modalopen(){
 				document.getElementById("moodal1").style.display =" flex"
-				document.body.style.overflow ="hidden" 
+				document.body.style.overflow ="hidden"
 			}
 			function modalclose1(){
 				document.getElementById("moodal2").style.display =" none"
-				document.body.style.overflowY ="visible" 
+				document.body.style.overflowY ="visible"
 
 			}
 			function modalopen1(){
 				document.getElementById("moodal2").style.display =" flex"
-				document.body.style.overflow ="hidden" 
+				document.body.style.overflow ="hidden"
 
 			}
 			function modalclose2(){
 				document.getElementById("moodal32").style.display =" none"
-				document.body.style.overflowY ="visible" 
+				document.body.style.overflowY ="visible"
 
 			}
 			function modalopen2(){
 				document.getElementById("moodal32").style.display =" flex"
-				document.body.style.overflow ="hidden" 
+				document.body.style.overflow ="hidden"
 
 			}
 			function hey(){
 				alert("heyyyy")
 			}
 			function goright(){
-				document.getElementById("teamslider").style.transform ="translateX(-50%)" 
-				document.getElementById("teamslider").style.opacity ="0" 
+				document.getElementById("teamslider").style.transform ="translateX(-50%)"
+				document.getElementById("teamslider").style.opacity ="0"
 				setTimeout(() => {
-					document.getElementById("teamslider").style.display ="none" 
+					document.getElementById("teamslider").style.display ="none"
 					document.getElementById("teamslider1").style.display ="flex";
 					setTimeout(() => {
 						document.getElementById("teamslider1").style.opacity ="1";
 						document.getElementById("teamslider1").style.transform ="translateX(0px)";
 					}, 100);
 				}, 100);
-				
+
 			  }
 			  function goleft(){
-				document.getElementById("teamslider1").style.transform ="translateX(50%)" 
-				document.getElementById("teamslider1").style.opacity ="0" 
+				document.getElementById("teamslider1").style.transform ="translateX(50%)"
+				document.getElementById("teamslider1").style.opacity ="0"
 				setTimeout(() => {
-					document.getElementById("teamslider1").style.display ="none" 
+					document.getElementById("teamslider1").style.display ="none"
 					document.getElementById("teamslider").style.display ="flex";
 					setTimeout(() => {
 						document.getElementById("teamslider").style.opacity ="1";
@@ -1555,27 +1558,27 @@
 			duration: 1000
 		});
 		</script>
-		 
+
 		<script >
 			$(document).ready(function(){
 				$('.sidenav').sidenav();
 			 });
-			
+
 			$(".dropdown-trigger").dropdown();
-			
-			
-			
-		
-			
-	
+
+
+
+
+
+
 			  $(".hovers").hover3d({
 				selector: ".hov",
 				sensitivity:"10",
 				perspective:"400"
-				
+
 			});
-			
-			
+
+
 		</script>
 
 
@@ -1584,7 +1587,7 @@
 	 <script src="anime.min.js"></script>
 	 <script>
 		modal = document.getElementById("moodal1");
-		
+
 		window.onclick = function(event) {
 			if (event.target == document.getElementById("moodal1")) {
 				document.getElementById("moodal1").style.display = "none";
@@ -1635,11 +1638,9 @@
 });
 	 </script>
 	 <script src="skrollr.js"></script>
-	 <script type="text/javascript">
-		var s = skrollr.init();
-		</script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script src="particles.min.js"></script>
+	<!-- <script src="particles.min.js"></script> -->
 	<script>
 		particlesJS('particles-js',{
 			"particles": {
@@ -1751,28 +1752,28 @@
 			},
 			"retina_detect": true
 		  });
-		
+
 	</script>
-		
+
 	<script >
 		$(document).ready(function(){
 			$('.sidenav').sidenav();
 		 });
-		
-		$(".dropdown-trigger").dropdown();
-		
-		
 
-		
+		$(".dropdown-trigger").dropdown();
+
+
+
+
 
 		  $(".hovers").hover3d({
 			selector: ".hov",
 			sensitivity:"10",
 			perspective:"400"
-			
+
 		});
 		  Switch(1);
-		 
+
 	</script>
 	<script src="common.js"></script>
 	<script>
@@ -1789,11 +1790,11 @@ function videostart(){
     maximize = true
 	element.style.opacity = '0'
     for (let x = 0; x <= Width; x++) {
-      element.style.width = Width - x + "px" 
+      element.style.width = Width - x + "px"
     }
     setTimeout(() => {
     element.style.display = "none"
-    vid.style.borderRadius = "15px" 
+    vid.style.borderRadius = "15px"
     vid.style.width = "780px"
     vid.style.height = "360px"
     vid.play();
@@ -1805,20 +1806,20 @@ function videostop(){
   if (maximize) {
   maximize = false
   element.style.display = "flex"
-  vid.style.borderRadius = "10px" 
+  vid.style.borderRadius = "10px"
   vid.controls = false
   vid.style.width = "260px"
   vid.style.height = "120px"
   setTimeout(() => {
     for (let x = 0; x <= Width; x++) {
-      element.style.width = x + "px" 
+      element.style.width = x + "px"
     }
     setTimeout(() => {
       element.style.opacity = '1'
     }, 500);
   }, 1000);
   }
-      
+
 }
 
 
@@ -1829,21 +1830,78 @@ function videoset(){
       if (!entry.isIntersecting) {
         videostop();
         vid.pause()
-      } 
+      }
     });
-    
+
   }
   const newoptions = {
       threshold: 0.1,
     }
   const observer = new IntersectionObserver(handleIntersection,newoptions);
-  
+
   observer.observe(newtarget);
-  
+
 }
 
 
 		getneww();getnewww();videoset();get51();getnew();get4();get11();get41();get42();Switch(1);
+	</script>
+	<script>
+		function contactsubmit(){
+			var field1 = $("#namefield").val();
+            var field2 = $("#emailfield").val();
+            var field3 = $("#subjectfield").val();
+			var field4 = $("textarea#messagefield").val();
+			if(field1 == ""){
+				document.getElementById("namefield").style.borderBottomColor = "red "
+				document.getElementById("validaterror").style.opacity = "1"
+			}else{
+				document.getElementById("namefield").style.borderBottomColor = "lightgray"
+			}
+			if(field2 == ""){
+				document.getElementById("emailfield").style.borderBottomColor = "red "
+				document.getElementById("validaterror").style.opacity = "1"
+			}else{
+				document.getElementById("emailfield").style.borderBottomColor = "lightgray "
+			}
+			if(field3 == ""){
+				document.getElementById("subjectfield").style.borderBottomColor = "red "
+				document.getElementById("validaterror").style.opacity = "1"
+			}else{
+				document.getElementById("subjectfield").style.borderBottomColor = "lightgray"
+			}
+			if(field4 == ""){
+				document.getElementById("messagefield").style.border = "red 1px solid "
+			}else{
+				document.getElementById("messagefield").style.border = "lightgray 1px solid"
+			}
+			if(field1 !== "" && field2 !== "" && field3 !== "" && field4 !== ""){
+
+		$.ajax({
+
+			url: "https://docs.google.com/forms/d/e/1FAIpQLScp-a4yF2OC4cxtzlBxmPbqvxgiOLvcP2WVe18rmrW6_aXKUA/formResponse?",
+			data: {"entry.37352416": field1, "entry.1878316948": field2, "entry.1454958422": field3, "entry.391054700": field4},
+			type: "POST",
+			dataType: "xml",
+			success: function(d)
+			{
+			},
+			error: function(x, y, z)
+				{
+
+
+					document.getElementById("validaterror").style.display = "none "
+					document.getElementById("success").style.display = "flex "
+					document.getElementById("success").style.opacity = "1 "
+					document.getElementById("namefield").value = ""
+					document.getElementById("emailfield").value = ""
+					document.getElementById("subjectfield").value = ""
+					document.getElementById("messagefield").value = ""
+				}
+		});
+		return false;
+	}
+	}
 	</script>
 	<script src="common1.js"></script>
 	</body>
