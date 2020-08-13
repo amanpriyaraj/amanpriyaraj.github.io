@@ -97,3 +97,8 @@ function expand(){
 	document.getElementById("linkcont").style.overflow = "hidden";
   }
 
+  for (let i = 0; i < document.getElementsByClassName("phs").length; i++) {
+	  const element = document.getElementsByClassName("phs")[i];
+	  document.getElementsByClassName("phs")[i].innerHTML = " 7893616574 <br> 8158065049<br> support@nurturecult.com"
+	  
+  }
