@@ -176,7 +176,7 @@
 			align-items: center;
 		}
 		.stall{
-			opacity: 0;
+			opacity: 1;
 			transition: 0.5s ease-in !important;
 		}
 		.facesCont{
@@ -723,7 +723,7 @@
 
 	</head>
 
-   <body onload="showstall();drawsvg()">
+   <body onload="showstall();drawsvg();">
 	<div id="nav11" style="box-shadow: 0px 2px 10px #888888;">
 		<a href="index.html#homeMain" id="logo"  ></a>
 		<div class="menu" style="font-family:Graphik,sans-serif;">
@@ -824,14 +824,7 @@
 		}
 	</script>
 
-	<ul class="sidenav" id="mobile-demo" >
-		<li><a href="index.html">HOME</a></li>
-		<li><a href="services.html" >SERVICES</a></li>
-		<li><a href="blogPage.html">BLOG</a></li>
-		<li><a href="#ourmission">MiSSION</a></li>
-		<li><a href="index.html#ourteam">OUR TEAM</a></li>
-		<li><a href="collapsible.html">CONTACT US</a></li>
-	</ul>
+	
 	</div>
 	<a href="#homeMain" id="gotop"><div id="uparrow" onclick="gotop()"></div></a>
 	<div class="logoCont" id="logocont" style="padding:30px;display:flex; flex-flow:row nowrap;width:100%;margin:0px auto;	justify-content:center;background-color:rgba(211, 211, 211, 0.274)">
@@ -1027,9 +1020,9 @@
 			<a href="course1.html" class="ourbutton"  style="width: fit-content;"id="modalbutton1">Register</a>
 		</div>
 	</div>
-	<div class="moodal" id="moodal3" style="border-radius: 10px;flex-flow:column;max-height:fit-content" >
-		<div class="modalimg" style="background-image: url(card1.jpg);min-height:50%;min-width:100%"></div>
-		<div class="modalcontent" style="height: 50%;min-width:100%">
+	<div class="moodal" id="moodal3" style="border-radius: 10px;flex-flow:row;max-height:fit-content" >
+		<div class="modalimg" style="background-image: url(card1.jpg);"></div>
+		<div class="modalcontent" >
 			<div class="modaltext">
 				<div class="exitbtn" onclick="modalclose()">&#10006;</div>
 				<h3>header</h3>
@@ -1295,28 +1288,28 @@
 
 
 
-				<div class="teamcard" style="background-image: url(yash.jpg);">
+				<div class="teamcard" style="background-image: url(abhishek.jpg);">
 					<div class="teamdesc1">
 						<div class="teamdesc">
 							<div>
-								<h5>Yash <br> Goyal</h5>
+								<h5>Abhishek <br> Vinuraj</h5>
 							</div>
 							<div>
-								<h6>Entrepreneurship</h6>
+								<h6></h6>
 							</div>
 							<a target="_blank" href="https://www.linkedin.com/in/yg1998"><div class="social"></div></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="teamcard" style="background-image: url(nama.jpg);display:flex !important">
+				<div class="teamcard" style="background-image: url(bhawna.jpg);display:flex !important">
 					<div class="teamdesc1">
 						<div class="teamdesc">
 							<div>
-								<h5>Aman<br> Nama</h5>
+								<h5>Bhawna<br> Bharadwaj</h5>
 							</div>
 							<div>
-								<h6>Marketing</h6>
+								<h6></h6>
 							</div>
 							<a target="_blank" href="https://www.linkedin.com/in/aman-nama-303356154"><div class="social"></div></a>
 						</div>
@@ -1362,11 +1355,11 @@
 			<div class="postSpace" style="min-width:400px;width:50%;max-width:100%;display:flex;flex-flow:column;">
 				<div class="feel-free" style="border-bottom: 1px solid lightgray; flex-flow:row; display:flex"><h3>Feel free to contact our <span style="color: #F4D03F;">Enquiry desk</span>  anytime!</h3></div>
 				<div class="lower" style="display:flex;flex-flow:row;">
-					<div style="width:50%;text-align:right;border-right: 1px solid lightgrey; padding:10px">
+					<div style="width:50%;text-align:left;border-right: 1px solid lightgrey; padding:10px">
 						<div class="title"> <span style="color:#F4D03F">Give us a call</span> on</div>
 						<div class="content">7893616574 <br> 8158065049</div>
 					</div>
-					<div style="width:50%;text-align:right;border-right: 0px solid lightgrey;padding:10px">
+					<div style="min-width:50%;text-align:left;border-right: 0px solid lightgrey;padding:10px">
 						<div class="title"> <span style="color:#F4D03F">E-mail</span> us to</div>
 						<div class="content">support@nurturecult.com<br></div>
 					</div>
@@ -1379,7 +1372,7 @@
 			<textarea id="messagefield" required name="entry.391054700" style="height: 100px;border-radius:5px;padding:5px"placeholder="Message"></textarea>
 			<div id="validaterror" style="color: rgb(204, 0, 0);opacity:0;margin:5px">Please fill the highlighted fields.</div>
 			<div id="success" style="color: green;opacity:0;display:none;margin:5px">Thank you! We will contact you soon.</div>
-			<div  onclick="contactsubmit()" class="search2" style="padding:5px 10px;margin:20px;margin-top:5px;margin-bottom:0px;margin-left:100%;transform:translateX(-100%); min-width:fit-content;border:none">Submit</div>
+			<div  onclick="contactsubmit()" class="search2" style="padding:8px 15px;margin:20px;margin-top:5px;margin-bottom:0px;margin-left:100%;transform:translateX(-100%); min-width:fit-content;border:none">Submit</div>
 		</form>
 </div>
 	</div>
@@ -1497,7 +1490,7 @@
 	  </div>
   </footer>
 
-
+  <script src="skrollr.js"></script>
 	    <!--JavaScript at end of body for optimized loading-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -1565,21 +1558,11 @@
 					}, 100);
 				}, 250);
 			}
-		$('#exampleSlider').multislider({
-			interval: 2000,
-			slideAll: true,
-			duration: 1000
-		});
+		
 		</script>
 
 		<script >
-			$(document).ready(function(){
-				$('.sidenav').sidenav();
-			 });
-
-			$(".dropdown-trigger").dropdown();
-
-
+			
 
 
 
@@ -1659,10 +1642,10 @@
     loop: false
 });
 	 </script>
-	 <script src="skrollr.js"></script>
+	 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script src="particles.min.js"></script>
+	<!-- <script src="particles.min.js"></script> -->
 	<script>
 		particlesJS('particles-js',{
 			"particles": {
