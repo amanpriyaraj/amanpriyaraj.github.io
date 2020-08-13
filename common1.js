@@ -52,14 +52,15 @@
 				}
 			}
 		}
-
+		
 
 
 	var position = $(window).scrollTop(); 
         $(window).scroll(function() { 
     var scroll = $(window).scrollTop(); 
     if (scroll > position) { 
-        document.getElementById("nav11").style.opacity ="0"
+		document.getElementById("nav11").style.opacity ="0"
+		document.getElementById("gotop").style.opacity='1'
       respbool = true
       showrespmenu()
       document.getElementsByClassName("dynswitch")[0].style.top = "100px"
@@ -82,3 +83,16 @@
     } 
     position = scroll; 
 }); 
+
+function expand1(){
+	document.getElementById("linkcont1").style.overflow = "visible";
+  }
+  function deExpand1(){
+	document.getElementById("linkcont1").style.overflow = "hidden";
+  }
+function expand(){
+	document.getElementById("linkcont").style.overflow = "visible";
+  }
+  function deExpand(){
+	document.getElementById("linkcont").style.overflow = "hidden";
+  }

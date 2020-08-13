@@ -7,6 +7,7 @@ body{
     left: 0px;
     right: 0px;
     }
+
 video:hover{
     transform: scale(1.1);
     
@@ -17,8 +18,8 @@ video,#logoscontainer{
 
 #gotop{
     
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: #4b555f;
     position: fixed;
     right:20px;
@@ -291,12 +292,12 @@ justify-content: center !important;
     background-position: 10px 0% !important;
 }
 .teamcard:hover .teamdesc{
-    opacity: 1;
+    opacity: 1 !important;
     transform: translate(0%,0%);
     
 }
 .teamcard:hover .teamdesc1{
-    opacity:1;
+    opacity:1 !important;
 }
 .teamdesc{
     flex-flow: column nowrap;
@@ -305,12 +306,12 @@ justify-content: center !important;
     align-self: flex-end;
     position: relative;
     border-radius: 5px;
-    top: 100%;
+    /* top: 100%; */
     transform: translate(-20%,0%);
     color: white;
     font-family: sans-serif;
     text-align: left;
-    opacity: 0;
+    display: flex;
     font-weight: bolder;
 }
 
@@ -325,7 +326,6 @@ justify-content: center !important;
     padding-bottom: 20%;
     opacity: 0;
     display: flex;
-    box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.452);
     backdrop-filter: blur(1px);
 
@@ -335,9 +335,7 @@ justify-content: center !important;
     position: relative;
     left: 0px;
 }
-#lastcard1,#lastcard2{
-    opacity: 0;
-}
+
 .social{
     width: 30px;
     height: 30px;
@@ -421,7 +419,7 @@ text-decoration: none !important;
     top: 0px;
     min-width: 100%;
     min-height: 66vw;
-    z-index: 10;
+    z-index: 10;    
 }
 #bg1{
     background-image: url(bg.jpg);
@@ -520,7 +518,7 @@ h3{
 }
 .ourbutton{
     background-color: rgb(29, 29, 29);
-    color: white;
+    color: white !important;
     border-radius: 5px;
     padding:5px 10px;
     font-size: 16px;
@@ -532,13 +530,15 @@ h3{
     position: relative;
     right: 0px;
     bottom: 0px;
+    border: 1px solid black;
 
 
 } 
 .ourbutton:hover{
     background-color: aliceblue;
-    color: black;
+    color: black !important;
     box-shadow: none;
+    border: 1px solid black;
 
 }
 
@@ -551,11 +551,7 @@ h3{
     transform: scale(1.2);
 }
 
-@media  (min-width: 1240px) {
-    .logo{
-        font-size: 0.9em !important;
-    }
-}
+
 /* @media  (min-width: 1240px) {
     
     .logo{
@@ -657,4 +653,6 @@ h3{
 .inputSpace *{
     transition: 0.4s cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
+
+
  

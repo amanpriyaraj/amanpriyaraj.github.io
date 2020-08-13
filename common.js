@@ -598,8 +598,6 @@ function drop2(){
 
 
 
-
-
 $(window).scroll(function() { 
     var scroll = $(window).scrollTop(); 
     if (scroll > position) { 

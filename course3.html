@@ -15,23 +15,47 @@
     
     #regForm{
         font-size: 0.9em !important;
-        background-color: #4b555f !important;
     }
     .containe{
         width: 80% !important;
         
     }
     .search{
-        padding: 10px;
+        padding: 5px 15px;
         margin: 10px;
         border-radius: 5px;
         text-align: center;
-        color: white;
+        border-radius: 50px;
+        color: white !important;
         border: none;
+        background-size: 200% auto;
         font-size: medium;
-        background-color: rgb(36, 36, 36);
-        box-shadow: -2px 2px 2px 0px rgb(36, 36, 36);
+background-image: -webkit-linear-gradient(to right, #36d1dc 0%, #5b86e5 50%,#36d1dc 100%);  /* Chrome 10-25, Safari 5.1-6 */
+background-image: linear-gradient(to right,#36d1dc 0%, #5b86e5 50%,#36d1dc 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        box-shadow: 0px 0px 5px 0px #1c6f75;
     
+    }
+    .search:hover{
+        background-position:right center;
+    }
+    .searchfirst{
+        padding: 5px 15px;
+        margin: 10px;
+        border-radius: 5px;
+        text-align: center;
+        border-radius: 50px;
+        color: white !important;
+        border: none;
+        background-size: 200% auto;
+        font-size: medium;
+background-image: -webkit-linear-gradient(to left, #5b86e5 0%, #36d1dc 50%,#5b86e5 100%);  /* Chrome 10-25, Safari 5.1-6 */
+background-image: linear-gradient(to left,#5b86e5 0%, #36d1dc 50%,#5b86e5 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        box-shadow: 0px 0px 5px 0px #1c6f75;
+    }
+    .searchfirst:hover{
+        background-position: right center;
     }
     
     @media  (max-width: 600px) {
@@ -54,9 +78,9 @@
                 <a href="index.html#homeMain"   class="links">Home</a>
                 <div class="links" id="linkcont1" onmouseover="expand1();" onmouseout="deExpand1()" >
                     <a class="dlinks" id="expand"   >Services</a>
-                    <a href="index.html#menu2" class="dlinks" >Back to the future</a>
-                    <a href=" index.html#menu2" class="dlinks">Tere Liye</a>
-                    <a href="index.html#newcont" class="dlinks">We are gRoot</a>
+                    <a href="index.html#btf" class="dlinks" >Back to the future</a>
+				<a href=" index.html#tl" class="dlinks">Tere Liye</a>
+				<a href="index.html#wrgrt" class="dlinks">We are gRoot</a>
                 </div>
                 <a href="blogPage.html"   class="links">Blog</a>
                 <div class="links" id="linkcont" onmouseover="expand();" onmouseout="deExpand()" >
@@ -84,7 +108,7 @@
 
 	</div>
 <br><br><br><br>
- <div class="container" style="min-width: 90vw;font-size:1px"> 
+ <div class="container" style="width: 80%;max-width:500px"> 
      <h2>Enrollment</h2> 
      <p>Please fill in the necessary details for course enrollment and Enroll upon completion.</p>
      <p><small>Please note that all fields are mandatory</small></p>
@@ -115,7 +139,7 @@
     <div class="valid-feedback">: )</div>
     <div class="invalid-feedback">Please fill out this field.</div>
 </div>
-<button type="reset" class="btn hide-on-small-only btn-primary search">Reset</button> 
+<button type="reset" class=" hide-on-small-only  searchfirst">Reset</button> 
 <button  onclick="course21()" class="search btn-success enroll">Proceed to payment</button> 
 </form> 
 <div class="modal fade" id="myModal" role="dialog"> 
@@ -124,11 +148,18 @@
  </div>
 <br><br><br>
 
+<!-- Footer -->
 <footer class="page-footer" style="background-color:#4b555f">
     <div class="" style="width:90%;margin:auto;">
       <div class="row hide-on-small-only" style="display: block;">
-          <div class="col s4 m4" style="margin-top: 0px;">
-              <h3 style="font-family: sansa;">NurtureCult</h3>
+          <div class="col s6 m6 f-resp-m" style="margin-top: 0px;">
+              <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
+              <p class="footertext" style="color:#c6c6c6;padding-top:25px">
+                Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+            </p>
+          </div>
+          <div class="col s6 m3 f-resp-l" style="margin-top: 0px;">
+              <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
               <p class="footertext" style="color:#c6c6c6;padding-top:25px">
                 Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
             </p>
@@ -139,14 +170,14 @@
               <div class="col s6 explore-ll" style="height:min-content">
                   <ul>
                       <li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
-                      <li><a class="footerLink" href="index.html#menu2">TERE LIYE</a></li>
-                      <li><a class="footerLink" href="index.html#menu2">BACK TO FUTURE</a></li>
-                      <li><a class="footerLink" href="index.html#newcont">WE ARE GROOT</a></li>
+                      <li><a class="footerLink" href="index.html#tl">TERE LIYE</a></li>
+                      <li><a class="footerLink" href="index.html#btf">BACK TO FUTURE</a></li>
+                      <li><a class="footerLink" href="index.html#wrgrt">WE ARE GROOT</a></li>
                   </ul>
               </div>
               <div class="col s6 explore-ll">
                   <ul>
-                      <li><a class="footerLink" href="index.html#teamcontmain">BLOG</a></li>
+                      <li><a class="footerLink" href="blogPage.html">BLOG</a></li>
                       <li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
                       <li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
                   </ul>
@@ -154,30 +185,39 @@
               <div class="col s explore-l">
                 <ul>
                     <li><a class="footerLink" href="index.html#homeMain">HOME</a></li>
-                    <li><a class="footerLink" href="index.html#menu2">TERE LIYE</a></li>
-                    <li><a class="footerLink" href="index.html#menu2">BACK TO FUTURE</a></li>
-                    <li><a class="footerLink" href="index.html#newcont">WE ARE GROOT</a></li>
-                    <li><a class="footerLink" href="index.html#teamcontmain">BLOG</a></li>
+                      <li><a class="footerLink" href="index.html#tl">TERE LIYE</a></li>
+                      <li><a class="footerLink" href="index.html#btf">BACK TO FUTURE</a></li>
+                      <li><a class="footerLink" href="index.html#wrgrt">WE ARE GROOT</a></li><li><a class="footerLink" href="blogPage.html">BLOG</a></li>
                     <li><a class="footerLink" href="index.html#teamcontmain">OUR TEAM</a></li>
                     <li><a class="footerLink" href="index.html#contactus">CONTACT US</a></li>
                 </ul>
             </div>
-              
+
               </div>
           </div>
-          <div class="col s6 m2 ">
+          <div class="col s6 m2 f-resp-m">
             <p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
-            <p class="phs" style="color:#c6c6c6;"> +91 (80) 30682559 <br>
-            +91 (80) 33682560 <br>
-            info@clustr.co.in
+            <p class="phs" style="color:#c6c6c6;"> 7893616574 <br> 8158065049<br>
+                support@nurturecult.com
             </p>
+            <p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
+            <div class="row " ></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          
             </div>
-            <div class="col s12 m3 hide-on-med-and-down ">
+          <div class="col s6 m2 f-resp-l">
+            <p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+            <p class="phs" style="color:#c6c6c6;"> 7893616574 <br> 8158065049<br>
+                support@nurturecult.com
+            </p>
+            
+            </div>
+            <div class="col s12 m3 hide-on-med-and-down f-resp-l">
             <p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
             <div class="row " ></div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
-          
+
         </div>
             <div class="col s12 m4 hide-on-med-and-up" style="margin-top: 0px;">
                 <h3 style="font-family: sansa;">NurtureCult</h3>
@@ -192,17 +232,17 @@
               info@clustr.co.in
               </p>
               </div>
-              
-            
+
+
     </div>
     <div class="footer-copyright" style="padding:0px 0px;padding-right:10px">
-      
+
       <div style="display: flex;flex-flow:row;margin:auto;justify-content:space-between;max-width: 1370px;width:89%">
           <div  style="font-size:0.7em;display:flex;flex-flow:row;min-width:max-content;align-items:center">
               <span class="hide-on-small-only">© 2020 NurtureCult. All rights reserved</span>
-              &nbsp;&nbsp; 
+              &nbsp;&nbsp;
               <a href="T&C.html" style="text-decoration: underline;">Terms and Conditions</a>
-              &nbsp;&nbsp; 
+              &nbsp;&nbsp;
               <a href="PrivacyPolicy.html" style="text-decoration: underline;">Privacy Policy</a>
             </div>
               <div class="" style="display:flex;flex-flow:row nowrap;">
@@ -213,9 +253,9 @@
                   <div class="f-logos hide-on-small-only" style="background-image:url(upi2.jpg)"></div>
               </div>
               <div  style="display:flex;flex-flow:row nowrap;">
-                  <div class="f-logos" style="background-image:url(fb2.jpg)"></div>
-                  <div class="f-logos" style="background-image:url(insta2.jpg)"></div>
-                  <div class="f-logos" style="background-image:url(linkedin2.jpg)"></div>
+                  <a href="https://facebook.com/nurturecult" class="f-logos" style="height:25px;width:25px;background-image:url(fb2.jpg)"></a>
+                  <div class="f-logos" style="height:25px;width:25px;background-image:url(insta2.jpg)"></div>
+                  <div class="f-logos" style="height:25px;width:25px;background-image:url(linkedin2.jpg)"></div>
               </div>
       </div>
   </div>
@@ -307,7 +347,7 @@ window.rzpay=new Razorpay(c);rzpay.open()})};
    }
    
 </script>
-<script src="common.js"></script>
+
 <script src="common1.js"></script>
 </body>
 </html>

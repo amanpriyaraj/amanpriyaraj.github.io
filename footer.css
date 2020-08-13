@@ -72,6 +72,9 @@ footer *{
   .explore-l{
       display: none;
   }
+  .f-resp-m{
+      display: none;
+  }
   @media only screen and (max-width: 1200px) {
     .explore-ll{
         display: none;
@@ -91,7 +94,12 @@ footer *{
     .footerlimp{
         font-size: 0.3em;
     }
-    
+    .f-resp-m{
+        display: block;
+    }
+    .f-resp-l{
+        display: none;
+    }
 
   }
   @media only screen and (max-width: 930px) {
@@ -101,6 +109,7 @@ footer *{
     .explore-l{
         display: block;
     }
+    
     .footheaders{
         font-size: small;
     }

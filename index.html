@@ -61,7 +61,7 @@
 		}
 		body {
 			font-family: proxima-nova,sans-serif;
-			overflow-y: scroll !important ;
+			overflow-y: scroll  ;
 			-webkit-overflow-scrolling: touch;
 		}
 		body *{
@@ -175,7 +175,10 @@
 			justify-content: space-around;
 			align-items: center;
 		}
-
+		.stall{
+			opacity: 0;
+			transition: 0.5s ease-in !important;
+		}
 		.facesCont{
 			display: flex;
 			width: 100%;
@@ -384,7 +387,7 @@
 			border-radius: 100px;
 			text-align: center;
 			font-size: 15px;
-			color: white;
+			color: white !important;
 			cursor: pointer;
 			width: fit-content;
 			display: flex;
@@ -546,27 +549,25 @@
 			font-weight: 700;
 			opacity: 0.6;
 			transition: 0.5s ease;
-			padding:10px;
-			width:16vw;
-			max-width: 300px;
-			min-width: fit-content;
+			padding:20px;
+			width: fit-content;
 			height: 70px;
 			text-align:center;
-			font-size:1.4vw;
+			font-size:15px;
 			font-family: adam;
 		}
 
 		.logo:hover{
 			opacity: 1;
 			color: #F1C40F;
-			text-shadow: 0px 0px 4px #ffea0054;
+			text-shadow: 0px 0px 10px #ffea00c7;
 		}
 		.logos{
 			width:100%;
 			display:flex;
 			flex-flow:row;
-			justify-content:flex-end;
-			align-items:center
+			justify-content:center;
+			align-items:center;
 		}
 
 		#personal,#coll,#mission,#teaam,#career,#tteam,#newtxt{
@@ -619,9 +620,9 @@
 			.logoo{
 				display:flex;
 				flex-flow:column;
-				width:100%;
+				width:fit-content;
 				height:100%;
-				align-items:baseline;
+				align-items:center;
 			}
 		}
 		.row{
@@ -722,22 +723,22 @@
 
 	</head>
 
-   <body onload="drawsvg()">
+   <body onload="showstall();drawsvg()">
 	<div id="nav11" style="box-shadow: 0px 2px 10px #888888;">
 		<a href="index.html#homeMain" id="logo"  ></a>
 		<div class="menu" style="font-family:Graphik,sans-serif;">
 			<a href="index.html"   class="links">Home</a>
 			<div class="links" id="linkcont1" onmouseover="expand1();" onmouseout="deExpand1()" >
-				<a class="dlinks" id="expand"   >Services</a>
-				<a href="index.html#menu2" class="dlinks" >Back to the future</a>
-				<a href=" index.html#menu2" class="dlinks">Tere Liye</a>
-				<a href="index.html#newcont" class="dlinks">We are gRoot</a>
+				<a class="dlinks" id="expand1">Services</a>
+				<a href="index.html#btf" class="dlinks" >Back to the future</a>
+				<a href=" index.html#tl" class="dlinks">Tere Liye</a>
+				<a href="index.html#wrgrt" class="dlinks">We are gRoot</a>
 			</div>
 			<a href="blogPage.html"   class="links">Blog</a>
 			<div class="links" id="linkcont" onmouseover="expand();" onmouseout="deExpand()" >
-				<a class="dlinks" id="expand" onmouseover="expand()"  >About Us</a>
-				<a href="index.html#ourmission" class="dlinks" >Our Mission</a>
-				<a href=" index.html#teamcontmain" class="dlinks">Our Team</a>
+				<a class="dlinks" id="expand2" onmouseover="expand()"  >About Us</a>
+				<a href="index.html#ourmission" style="width: 100px !important;" class="dlinks" >Our Mission</a>
+				<a href=" index.html#teamcontmain" style="width: 100px !important;" class="dlinks">Our Team</a>
 			</div>
 			<a class="links" href="index.html#contactus"   >Contact Us</a>
 			<div class="hamburger" onclick="showrespmenu()"></div>
@@ -765,12 +766,12 @@
 
 	   <div style="height:66vw; ">
 			<div class="homeMain" id="homeMain">
-				<div id="particles-js"></div>
-				<div id="bg1"></div>
-				<div id="wordsheet" data-0="background-position:-6vw 0px;" data-end="background-position:-6vw -1000px;"></div>
+				<div id="particles-js" class="stall"  ></div>
+				<div id="bg1" class="stall"  ></div>
+				<div  class="stall"  id="wordsheet" data-0="background-position:-6vw 0px;" data-end="background-position:-6vw -800px;"></div>
 
 			<div style="width:100%;height:66vw;display:flex;justify-content:center;align-items:center">
-				<svg id="svg" style="margin-top:14vw;margin-left:6vw" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 680 680" height="34vw" width="34vw">
+				<svg id="svg" style="margin-top:8vw;margin-left:6vw" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 680 680" height="34vw" width="34vw">
 					<defs>
 					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M55.89 140.79C55.34 137.36 54.98 133.91 54.84 130.44C54.58 123.93 55.44 119.55 55.51 118.34C56.05 114.9 57.22 111.58 58.98 108.55C60.38 106.2 62.13 104.08 64.19 102.26C66.33 100.39 68.74 98.85 71.35 97.68C77.08 95.04 83.71 94.15 85.09 93.76C87.63 93.34 90.19 93.08 92.77 92.97C100.68 92.66 104.89 94.65 106.23 94.84C114.31 98 117.46 104.51 118.71 105.58C120.33 108.41 121.64 111.4 122.62 114.51C123.99 118.76 124.57 122.76 124.78 123.68C124.79 123.73 124.8 123.78 124.81 123.83C124.92 124.52 125.47 127.98 126.46 134.2L104.37 137.73C103.35 131.32 102.79 127.77 102.67 127.06C101.85 121.87 100.83 118.63 100.62 117.69C99.45 113.67 97.18 112.16 96.8 111.55C96.73 111.49 96.66 111.44 96.59 111.38C95.8 110.8 94.89 110.39 93.92 110.19C91.47 109.62 88.47 110.2 87.87 110.2C86.84 110.36 85.82 110.59 84.83 110.9C83.26 111.4 82.34 111.99 82.07 112.11C81.13 112.66 80.31 113.38 79.66 114.24C78.66 115.61 77.97 117.18 77.64 118.83C77.42 119.86 77.31 120.91 77.3 121.97C77.24 126.55 78.04 131.12 78.12 132.14C78.13 132.17 78.13 132.2 78.14 132.23C78.99 137.59 85.83 180.52 86.69 185.88C86.91 187.33 87.19 188.76 87.51 190.19C87.98 192.29 88.44 193.67 88.54 194.05C88.83 194.97 89.16 195.87 89.54 196.76C89.95 197.74 90.46 198.67 91.08 199.55C92.39 201.39 93.86 202.17 94.17 202.46C94.29 202.54 94.42 202.61 94.55 202.68C97.78 204.43 101.93 203.54 102.75 203.63C103.72 203.48 104.68 203.26 105.62 202.97C107.06 202.51 107.9 201.96 108.16 201.85C109.09 201.31 109.89 200.56 110.49 199.66C111.28 198.44 111.82 197.08 112.09 195.67C112.41 194.12 112.37 192.66 112.4 192.33C112.4 192.25 112.4 192.17 112.4 192.09C112.34 189.07 112.02 185.74 111.44 182.08L109.67 170.95L131.75 167.42C132.7 173.37 133.23 176.67 133.33 177.33C133.86 180.59 134.17 183.87 134.24 187.17C134.31 190.54 134.06 193.91 133.47 197.24C131.87 206.17 126.07 210.66 125.24 212.15C123.3 213.87 121.11 215.29 118.75 216.38C113.19 219 106.59 219.88 105.24 220.27C102.42 220.74 99.57 221 96.71 221.05C92.25 221.1 89.3 220.38 88.47 220.31C86.48 219.9 84.54 219.26 82.7 218.41C73.99 214.33 70.74 206.88 69.41 205.6C64.9 197.01 63.62 187.23 62.97 185.19C62.95 185.07 62.93 184.95 62.91 184.84C62.91 184.84 56.6 145.19 55.89 140.79Z" id="d14N2eXKC7"></path>
 					<path fill="rgb(0, 0, 0, 0)" class="lines" d="M177.95 143C177.81 142.11 177.64 141.22 177.44 140.33C176.98 138.25 176.49 137.05 176.38 136.69C176.17 136.13 175.91 135.58 175.6 135.07C175.06 134.18 174.5 133.71 174.38 133.56C174.18 133.37 173.96 133.2 173.73 133.05C172.03 131.91 169.4 132.47 168.92 132.41C168.32 132.5 167.72 132.65 167.14 132.86C166.08 133.26 165.48 133.79 165.29 133.9C165.13 134.03 164.98 134.17 164.84 134.31C164.12 135.06 163.6 135.96 163.31 136.94C163.2 137.33 163.11 137.72 163.05 138.12C162.82 139.66 162.81 141.41 163.01 143.36L163.55 148.74C151.44 150.21 144.71 151.02 143.36 151.19C142.99 148.38 142.83 145.54 142.91 142.7C143.05 138.26 143.98 135.4 144.1 134.59C144.79 132.05 145.94 129.64 147.48 127.47C149.6 124.62 152.37 122.29 155.57 120.67C160.83 117.92 167.06 117.11 168.34 116.72C170.78 116.31 173.26 116.13 175.73 116.18C184.01 116.41 187.83 120.42 189.18 120.89C195.75 126.58 197.14 135.63 198.02 137.26C198.2 138.08 198.35 138.9 198.48 139.72C199.13 143.79 204.31 176.35 204.96 180.42C205.74 185.3 206.44 188.34 206.6 189.22C207.47 193.15 208.19 195.58 208.37 196.29C208.62 197.15 208.87 198.02 209.12 198.89C209.42 199.94 209.7 200.92 209.97 201.81C198.58 203.63 192.26 204.64 190.99 204.85C190.7 203.93 190.39 203.01 190.09 202.09C189.46 200.22 188.86 198.5 188.72 198.1C187.45 194.47 187.03 193.22 186.84 192.68C186.83 192.63 186.81 192.59 186.8 192.54C186.09 198.13 182.87 202.1 182.43 203.17C180.68 205.56 178.22 207.37 175.4 208.35C174.07 208.83 172.7 209.19 171.3 209.4C169.45 209.71 167.58 209.76 165.72 209.54C163.86 209.32 162.05 208.78 160.38 207.94C155.53 205.51 153.22 201.77 152.43 201.08C149.33 196.66 148.9 192.44 148.51 191.47C147.19 183.24 149.32 178.54 149.41 177.11C151.62 170.97 155.47 167.42 156.14 166.34C158.45 164 160.95 161.86 163.63 159.95C164.65 159.22 165.69 158.52 166.75 157.84C170.81 155.27 174.94 152.86 179.16 150.62C178.43 146.05 178.03 143.51 177.95 143ZM180.81 160.99C177.71 163.52 175.57 165.48 174.99 165.98C173.79 167.07 172.67 168.24 171.65 169.5C171.21 170.04 170.79 170.6 170.39 171.17C169.53 172.41 168.83 173.75 168.3 175.15C168.1 175.7 167.93 176.26 167.78 176.83C167.51 177.95 167.38 179.1 167.38 180.25C167.38 181.31 167.47 182.37 167.64 183.41C167.79 184.41 168.02 185.4 168.32 186.36C168.81 187.9 169.41 188.83 169.53 189.1C169.89 189.71 170.32 190.28 170.81 190.8C171.4 191.44 172.12 191.96 172.92 192.34C174.46 193.03 175.97 192.76 176.31 192.81C176.41 192.79 176.52 192.78 176.62 192.76C178.65 192.44 179.91 191.32 180.28 191.16C181.91 189.89 182.81 188.58 183.09 188.29C183.32 187.98 183.54 187.66 183.76 187.34C184.08 186.84 184.27 186.48 184.32 186.39C184.47 186.11 184.61 185.82 184.72 185.53C183.94 180.62 181.2 163.44 180.81 160.99Z" id="b1lCuI4fUS"></path>
@@ -833,21 +834,21 @@
 	</ul>
 	</div>
 	<a href="#homeMain" id="gotop"><div id="uparrow" onclick="gotop()"></div></a>
-	<div class="logoCont" id="logocont" style="padding:30px;display:flex; flex-flow:row; justify-content:center;background-color:rgba(211, 211, 211, 0.274)">
-		<div id="vidbarcont"  style="min-height: 100%;height:max-content;width:fit-content;padding:50px;display:flex;flex-flow:row;overflow-x:hidden;justify-content:center">
-				<video id="video" poster="thumb.jpg" onclick="videostart()" width="260px" height="120px" controls>
+	<div class="logoCont" id="logocont" style="padding:30px;display:flex; flex-flow:row nowrap;width:100%;margin:0px auto;	justify-content:center;background-color:rgba(211, 211, 211, 0.274)">
+		<div id="vidbarcont"  style="min-height: 100%;height:max-content;width:100%;max-width:950px;padding:20px;display:flex;flex-flow:row;overflow-x:hidden;justify-content:center">
+				<video id="video"  poster="thumb.jpg" onclick="videostart()" width="260px" height="120px" controls>
 					<source src="Introduction.mp4" type="video/mp4">
 				</video>
-			<div class="logoo " id="logoscontainer" style="display:flex;flex-flow:column;height:100%;margin-left:80px">
+			<div class="logoo " id="logoscontainer" style="display:flex;flex-flow:column;height:100%;width:fit-content;margin-left:80px">
 				<div class="logos">
 					<div class="logo" >INTER-PERSONAL</div>
 					<div class="logo" >INTRAPERSONAL</div>
 					<div class="logo" >DAY TO DAY FINANCE</div>
 				</div>
 				<div class="logos">
+					<div class="logo" onclick="showwidth()">CAREER PATH</div>
 					<div class="logo" >TECHNOLOGY UPRISING</div>
 					<div class="logo" >EXISTENTIAL</div>
-					<div class="logo" >CAREER PATH</div>
 				</div>
 			</div>
 
@@ -1236,7 +1237,7 @@
 			<div id="left-button" onclick="goleft()"></div>
 
 			<div class="teamcont" id="teamslider">
-				<div class="teamcard" id="firstcard" style="background-image: url(shashwat.jpg);">
+				<div class="teamcard"  style="background-image: url(shashwat.jpg);">
 					<div class="teamdesc1">
 						<div class="teamdesc">
 							<div>
@@ -1251,7 +1252,7 @@
 				</div>
 				<div class="teamcard" style="background-image: url(yash.jpg);">
 					<div class="teamdesc1">
-						<div class="teamdesc">
+						<div class="teamdesc" >
 							<div>
 								<h5>Yash <br> Goyal</h5>
 							</div>
@@ -1361,17 +1362,13 @@
 			<div class="postSpace" style="min-width:400px;width:50%;max-width:100%;display:flex;flex-flow:column;">
 				<div class="feel-free" style="border-bottom: 1px solid lightgray; flex-flow:row; display:flex"><h3>Feel free to contact our <span style="color: #F4D03F;">Enquiry desk</span>  anytime!</h3></div>
 				<div class="lower" style="display:flex;flex-flow:row;">
-					<div style="text-align:right;width:33%;border-right: 1px solid lightgrey; padding:10px">
-						<div class="title"><span style="color: #F4D03F;"> Reach Us </span> at</div>
-						<div class="content">Address <br> address <br>address <br></div>
-					</div>
-					<div style="width:33%;text-align:right;border-right: 1px solid lightgrey; padding:10px">
+					<div style="width:50%;text-align:right;border-right: 1px solid lightgrey; padding:10px">
 						<div class="title"> <span style="color:#F4D03F">Give us a call</span> on</div>
-						<div class="content">+917249622769</div>
+						<div class="content">7893616574 <br> 8158065049</div>
 					</div>
-					<div style="width:33%;text-align:right;border-right: 0px solid lightgrey;padding:10px">
+					<div style="width:50%;text-align:right;border-right: 0px solid lightgrey;padding:10px">
 						<div class="title"> <span style="color:#F4D03F">E-mail</span> us to</div>
-						<div class="content">test@domain.com<br></div>
+						<div class="content">support@nurturecult.com<br></div>
 					</div>
 				</div>
 			</div>
@@ -1391,7 +1388,13 @@
 	<footer class="page-footer" style="background-color:#4b555f">
 		<div class="" style="width:90%;margin:auto;">
 		  <div class="row hide-on-small-only" style="display: block;">
-			  <div class="col s6 m3" style="margin-top: 0px;">
+			  <div class="col s6 m6 f-resp-m" style="margin-top: 0px;">
+				  <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
+				  <p class="footertext" style="color:#c6c6c6;padding-top:25px">
+					Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
+				</p>
+			  </div>
+			  <div class="col s6 m3 f-resp-l" style="margin-top: 0px;">
 				  <h3 style="font-family: sansa;color:#dfdfdf">NurtureCult</h3>
 				  <p class="footertext" style="color:#c6c6c6;padding-top:25px">
 					Nurture Cult is a student consulting cum educational platform. We adopt various non-conventional yet useful topics that are missing in our educational system and provide students with an in-depth understanding of it. Topics are not just limited to career advice and understanding of activities in real-world but also includes the development of various inter and intrapersonal skills. Currently, we have 3 programmes that are about webinars (Back To The Future), personal mentorship (Tere Liye) and community membership (We Are gRoot).
@@ -1428,14 +1431,24 @@
 
 				  </div>
 			  </div>
-			  <div class="col s6 m2 ">
+			  <div class="col s6 m2 f-resp-m">
 				<p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
-				<p class="phs" style="color:#c6c6c6;"> +91 (80) 30682559 <br>
-				+91 (80) 33682560 <br>
-				info@clustr.co.in
+				<p class="phs" style="color:#c6c6c6;"> 7893616574 <br> 8158065049<br>
+					support@nurturecult.com
 				</p>
+				<p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
+				<div class="row " ></div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			  
 				</div>
-				<div class="col s12 m3 hide-on-med-and-down ">
+			  <div class="col s6 m2 f-resp-l">
+				<p class="footheaders" style="color:#F1C40F;padding-top:25px"> CONTACT </p>
+				<p class="phs" style="color:#c6c6c6;"> 7893616574 <br> 8158065049<br>
+					support@nurturecult.com
+				</p>
+				
+				</div>
+				<div class="col s12 m3 hide-on-med-and-down f-resp-l">
 				<p class="footheaders " style="color:#F1C40F;padding-top:25px"> LOCATION </p>
 				<div class="row " ></div>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0183504509146!2d87.30905588130159!3d22.315145743045996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d440255555547%3A0x6f2f20dd0c0d6793!2sIndian%20Institute%20of%20Technology%20Kharagpur!5e0!3m2!1sen!2sin!4v1595912446138!5m2!1sen!2sin"  style="border-radius: 5px;max-width:300px;width:20vw;max-height:150px;height:10vw" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -1476,7 +1489,7 @@
 					  <div class="f-logos hide-on-small-only" style="background-image:url(upi2.jpg)"></div>
 				  </div>
 				  <div  style="display:flex;flex-flow:row nowrap;">
-					  <div class="f-logos" style="height:25px;width:25px;background-image:url(fb2.jpg)"></div>
+					  <a href="https://facebook.com/nurturecult" class="f-logos" style="height:25px;width:25px;background-image:url(fb2.jpg)"></a>
 					  <div class="f-logos" style="height:25px;width:25px;background-image:url(insta2.jpg)"></div>
 					  <div class="f-logos" style="height:25px;width:25px;background-image:url(linkedin2.jpg)"></div>
 				  </div>
@@ -1502,7 +1515,7 @@
 			}
 			function modalopen(){
 				document.getElementById("moodal1").style.display =" flex"
-				document.body.style.overflow ="hidden"
+				document.body.style.overflowY ="hidden"
 			}
 			function modalclose1(){
 				document.getElementById("moodal2").style.display =" none"
@@ -1511,7 +1524,7 @@
 			}
 			function modalopen1(){
 				document.getElementById("moodal2").style.display =" flex"
-				document.body.style.overflow ="hidden"
+				document.body.style.overflowY ="hidden"
 
 			}
 			function modalclose2(){
@@ -1521,7 +1534,7 @@
 			}
 			function modalopen2(){
 				document.getElementById("moodal32").style.display =" flex"
-				document.body.style.overflow ="hidden"
+				document.body.style.overflowY ="hidden"
 
 			}
 			function hey(){
@@ -1586,6 +1599,15 @@
 	 <!--JavaScript at end of body for optimized loading-->
 	 <script src="anime.min.js"></script>
 	 <script>
+		function showstall(){
+  
+			for (let i = 0; i < document.getElementsByClassName("stall").length; i++) {
+			  const element = document.getElementsByClassName("stall")[i];
+			  element.style.opacity = 1
+			}
+			
+			}
+
 		modal = document.getElementById("moodal1");
 
 		window.onclick = function(event) {
@@ -1640,7 +1662,7 @@
 	 <script src="skrollr.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<!-- <script src="particles.min.js"></script> -->
+	<script src="particles.min.js"></script>
 	<script>
 		particlesJS('particles-js',{
 			"particles": {
@@ -1756,15 +1778,8 @@
 	</script>
 
 	<script >
-		$(document).ready(function(){
-			$('.sidenav').sidenav();
-		 });
 
-		$(".dropdown-trigger").dropdown();
-
-
-
-
+		
 
 		  $(".hovers").hover3d({
 			selector: ".hov",
@@ -1781,22 +1796,31 @@
 		element = document.getElementById("logoscontainer")
 vid = document.getElementById("video")
 vid.controls = false
-Width = 800
+Width = document.getElementById("logoscontainer").offsetWidth
+element.style.width = Width + "px"
 maximize = false
 function videostart(){
-
+	
   if (maximize = 1) {
-	vid.poster = "none"
     maximize = true
 	element.style.opacity = '0'
-    for (let x = 0; x <= Width; x++) {
+    for (let x = 0; x < Width; x++) {
       element.style.width = Width - x + "px"
-    }
+	}
+	
     setTimeout(() => {
     element.style.display = "none"
-    vid.style.borderRadius = "15px"
-    vid.style.width = "780px"
-    vid.style.height = "360px"
+	vid.style.borderRadius = "15px"
+	if(screen.width < 780){
+		
+		vid.style.width = "80vw"
+    	vid.style.height = "40vw"
+	}else{
+		
+		vid.style.width = "780px"
+		vid.style.height = "360px"
+
+	}
     vid.play();
     vid.controls = true
     }, 1000);

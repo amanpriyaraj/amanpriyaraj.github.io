@@ -13,7 +13,8 @@
     z-index: 10000;
 	background-color:#f5f5f5;
     font-weight: 900;
-    padding: 0px 50px;
+    padding: 0px 30px;
+    padding-right: 55px;
 }
 @font-face {
     font-family: font;
@@ -45,6 +46,13 @@ body *{
     background-color:#f5f5f5;
     border-radius: 2px;
 }
+.dlinks{
+    min-width: 140px !important;
+
+}
+.dlinks:nth-last-child(1),.dlinks:nth-last-child(2){
+    min-width: 80px !important;
+}
 a{
     color: #737373;
 }
@@ -55,16 +63,16 @@ a{
     align-items: center;
 }
 .links{
-    padding: 10px;
+    padding: 30px;
     height: min-content;
 }
 .links:nth-last-child(1){
-    margin-right: 30px;
+    margin-right: 0px !important;
 }
 
 .dlinks{
-    width: 130px !important;
-    padding: 5px;
+    width: max-content !important;
+    padding: 10px;
 }
 .dlinks:nth-child(1){
      padding: 0px ;
@@ -87,15 +95,20 @@ a{
     margin-right: 10px;
 }
 #linkcont1,#linkcont{
-    width: 70px !important;
     cursor: pointer;
     text-align: left;
+    width: 60px;
     
+}
+#linkcont1 *{
+    min-width: 140px !important;
 }
 #linkcont1{
     width: 55px !important;
 }
-
+#gotop{
+    opacity: 0;
+}
 
 
 .linkcont,.linkcont1{
@@ -103,7 +116,6 @@ a{
     border-radius: 2px;
 }
 .links {
-    padding: 0px 100px;
     width: fit-content;
     display: flex;
     flex-flow: column;
@@ -113,8 +125,9 @@ a{
 }
 
 .links {
-    padding: 0px ;
-    width: 60px;
+    padding: 0px;
+    margin: 0px 16px ;
+    /* width: 60px; */
     text-align: center;
     display: flex;
     flex-flow: column;
