@@ -1224,7 +1224,8 @@
 
 	<div class="screen2" id="teamcontmain" style="flex-flow:column;padding:0px;">
 
-		<h2 id="tteam" ></h2>
+		<h2 id="tteam" style="line-height: 20px;"></h2>
+		<h3 id="teamsub" style="opacity: 0;">Founders</h3>
 
 		<div class="teamcontmain"  style="max-width:1300px;overflow:hidden;">
 			<div id="left-button" onclick="goleft()"></div>
@@ -1315,33 +1316,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="teamcard" style="background-position:center;background-image: url(joy2.jpg);">
-					<div class="teamdesc1">
-						<div class="teamdesc">
-							<div>
-								<h5>Joydip <br> Sing</h5>
-							</div>
-							<div>
-								<h6>Coding</h6>
-							</div>
-							<a target="_blank" href="https://www.linkedin.com/in/iam-joydip-sing"><div class="social"></div></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="teamcard" style="background-image: url(umang3.jpg);">
-					<div class="teamdesc1">
-						<div class="teamdesc">
-							<div>
-								<h5>Umang <br> Agarwal</h5>
-							</div>
-							<div>
-								<h6>Neural Network</h6>
-							</div>
-							<a target="_blank" href="https://www.linkedin.com/in/umang-agarwal-06b21016a"><div class="social"></div></a>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 			<div id="right-button" onclick="goright()"></div>
 		</div>
@@ -1530,31 +1505,34 @@
 				document.body.style.overflowY ="hidden"
 
 			}
-			function hey(){
-				alert("heyyyy")
-			}
+			
 			function goright(){
 				document.getElementById("teamslider").style.transform ="translateX(-50%)"
 				document.getElementById("teamslider").style.opacity ="0"
+				document.getElementById("teamsub").style.opacity ="0"
 				setTimeout(() => {
 					document.getElementById("teamslider").style.display ="none"
 					document.getElementById("teamslider1").style.display ="flex";
 					setTimeout(() => {
 						document.getElementById("teamslider1").style.opacity ="1";
 						document.getElementById("teamslider1").style.transform ="translateX(0px)";
+						document.getElementById("teamsub").innerHTML ="Vice President"
+						document.getElementById("teamsub").style.opacity ="1"
 					}, 100);
 				}, 100);
-
 			  }
 			  function goleft(){
 				document.getElementById("teamslider1").style.transform ="translateX(50%)"
 				document.getElementById("teamslider1").style.opacity ="0"
+				document.getElementById("teamsub").style.opacity ="0"
 				setTimeout(() => {
 					document.getElementById("teamslider1").style.display ="none"
 					document.getElementById("teamslider").style.display ="flex";
 					setTimeout(() => {
 						document.getElementById("teamslider").style.opacity ="1";
 						document.getElementById("teamslider").style.transform ="translateX(0px)";
+						document.getElementById("teamsub").innerHTML ="Founders"
+						document.getElementById("teamsub").style.opacity ="1"
 					}, 100);
 				}, 250);
 			}

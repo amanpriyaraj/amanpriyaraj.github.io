@@ -229,7 +229,7 @@ function get11(){
           }
         }
         typeWriter();
-        
+        document.getElementById("teamsub").style.opacity = "1"
         setTimeout(() => {
           document.getElementById("tteam").style.border = "none"
         }, 800 + 1200 + team.length*speed + 400);
@@ -238,8 +238,9 @@ function get11(){
             const element = document.getElementsByClassName("teamcard")[x];
             setTimeout(() => {
               element.style.opacity = 1
-            }, 30*x);
+            }, 100*x);
           }
+
         }, team.length*speed + 200);
       } 
     });
